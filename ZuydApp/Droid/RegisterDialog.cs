@@ -42,8 +42,15 @@ namespace ZuydApp.Droid
 		void BtnSignUp_Click(object sender, EventArgs e)
 		{
 			if (_txtPassword1.Text == _txtPassword2.Text) {
-				_onSignUpComplete.Invoke(this, new ZuydApp.Register(_txtEmail.Text, _txtPassword1.Text));
-				this.Dismiss();
+				_onSignUpComplete.Invoke (this, new ZuydApp.Register (_txtEmail.Text, _txtPassword1.Text));
+				this.Dismiss ();
+			} else {
+				/*var builder = new AlertDialog.Builder (this);
+				builder.SetTitle ("Hello Dialog")
+					.SetMessage ("Is this material design?")
+					.SetPositiveButton ("Yes", delegate { Console.WriteLine("Yes"); })
+					.SetNegativeButton ("No", delegate { Console.WriteLine("No"); });
+				builder.Create().Show ();*/
 			}
 		}
 

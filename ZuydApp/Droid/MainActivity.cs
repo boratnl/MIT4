@@ -14,29 +14,48 @@ namespace ZuydApp.Droid
 	[Activity (Label = "ZuydApp.Droid", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
 	public class MainActivity : Activity
 	{
-		
+		private Login _login;
+		private EditText _etEmail;
+		private EditText _etPassword;
+		private CheckBox _cbRemember;
 		private Button _btnLogIn;
 		private Button _btnRegister;
 		private ProgressBar _progressBar;
 
 		protected override void OnCreate(Bundle bundle)
 		{
+			_login = new Login ();
+			if (_login.CheckIfDataIsOffline()) {
+				StartActivity(typeof(MenuScreen));				
+			}
 			base.OnCreate(bundle);
 			SetContentView(Resource.Layout.Login);
 
 			_btnLogIn = FindViewById<Button>(Resource.Id.BtnLoginLogin);
 			_btnRegister = FindViewById<Button>(Resource.Id.BtnRegisterLogin);
 			_progressBar = FindViewById<ProgressBar>(Resource.Id.PgbLogin);
+			_etEmail = FindViewById<EditText> (Resource.Id.TxtEmailLogin);
+			_etPassword = FindViewById<EditText> (Resource.Id.TxtPasswordLogin);
+			_cbRemember = FindViewById<CheckBox> (Resource.Id.CbxRemberLogin);
 
 			_btnRegister.Click += _btnRegister_Click;
 			_btnLogIn.Click += _btnLogIn_Click;
 			//_btnSignIn.Click += _btnSignIn_Click;
+
+
 		}
 
 		void _btnLogIn_Click (object sender, EventArgs e)
 		{
+			Login login = new Login (_etEmail.Text, _etPassword.Text, _cbRemember.Checked);
 			Thread.Sleep(3000);
-			StartActivity(typeof(MenuScreen));
+			if (login.CheckPassword()) {
+				StartActivity (typeof(MenuScreen));
+			}else {
+				var builder = new AlertDialog.Builder (this);
+				builder.SetTitle ("Login Error").SetMessage("U kunt zich niet inloggen");
+				builder.Create ().Show ();
+			}
 		}
 
 		void _btnRegister_Click (object sender, EventArgs e)
