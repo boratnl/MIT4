@@ -15,7 +15,7 @@ namespace ZuydApp
 			_password = password;
 			sendConfirmEmail ();
 		}
-
+		//properties van oma kutjes
 		public string Name
 		{
 			get { return _name; }
