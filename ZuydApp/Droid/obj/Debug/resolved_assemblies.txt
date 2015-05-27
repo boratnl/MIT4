@@ -1,0 +1,2 @@
+C:\Users\Gebruiker\Documents\Projects\ZuydApp\Droid\bin\Debug\ZuydApp.Droid.dll
+C:\Users\Gebruiker\Documents\Projects\ZuydApp\ZuydApp\bin\Debug\ZuydApp.dll

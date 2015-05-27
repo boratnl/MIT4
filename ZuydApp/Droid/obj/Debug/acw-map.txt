@@ -1,0 +1,12 @@
+ZuydApp.Droid.MainActivity, ZuydApp.Droid;md5117758b96ce9c2c728bac684a7ffe8d5.MainActivity
+ZuydApp.Droid.MainActivity, ZuydApp.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5117758b96ce9c2c728bac684a7ffe8d5.MainActivity
+ZuydApp.Droid.MainActivity;md5117758b96ce9c2c728bac684a7ffe8d5.MainActivity
+zuydapp.droid.MainActivity;md5117758b96ce9c2c728bac684a7ffe8d5.MainActivity
+ZuydApp.Droid.RegisterDialog, ZuydApp.Droid;md5117758b96ce9c2c728bac684a7ffe8d5.RegisterDialog
+ZuydApp.Droid.RegisterDialog, ZuydApp.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5117758b96ce9c2c728bac684a7ffe8d5.RegisterDialog
+ZuydApp.Droid.RegisterDialog;md5117758b96ce9c2c728bac684a7ffe8d5.RegisterDialog
+zuydapp.droid.RegisterDialog;md5117758b96ce9c2c728bac684a7ffe8d5.RegisterDialog
+ZuydApp.Droid.MenuScreen, ZuydApp.Droid;md5117758b96ce9c2c728bac684a7ffe8d5.MenuScreen
+ZuydApp.Droid.MenuScreen, ZuydApp.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5117758b96ce9c2c728bac684a7ffe8d5.MenuScreen
+ZuydApp.Droid.MenuScreen;md5117758b96ce9c2c728bac684a7ffe8d5.MenuScreen
+zuydapp.droid.MenuScreen;md5117758b96ce9c2c728bac684a7ffe8d5.MenuScreen
