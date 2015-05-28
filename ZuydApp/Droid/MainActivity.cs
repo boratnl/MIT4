@@ -14,7 +14,6 @@ namespace ZuydApp.Droid
 	[Activity (Label = "ZuydApp.Droid", Icon = "@drawable/icon", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
 	public class MainActivity : Activity
 	{
-		private Login _login;
 		private EditText _etEmail;
 		private EditText _etPassword;
 		private CheckBox _cbRemember;
@@ -24,10 +23,10 @@ namespace ZuydApp.Droid
 
 		protected override void OnCreate(Bundle bundle)
 		{
-			_login = new Login ();
-			if (_login.CheckIfDataIsOffline()) {
+			/*LoginRepository lr = new LoginRepository ();
+			if (lr.ExistDatabase()) {
 				StartActivity(typeof(MenuScreen));				
-			}
+			}*/
 			base.OnCreate(bundle);
 			SetContentView(Resource.Layout.Login);
 
@@ -40,21 +39,25 @@ namespace ZuydApp.Droid
 
 			_btnRegister.Click += _btnRegister_Click;
 			_btnLogIn.Click += _btnLogIn_Click;
-			//_btnSignIn.Click += _btnSignIn_Click;
-
-
+			//_btdnSignIn.Click += _btnSignIn_Click;
 		}
 
 		void _btnLogIn_Click (object sender, EventArgs e)
 		{
 			Login login = new Login (_etEmail.Text, _etPassword.Text, _cbRemember.Checked);
-			Thread.Sleep(3000);
-			if (login.CheckPassword()) {
-				StartActivity (typeof(MenuScreen));
-			}else {
-				var builder = new AlertDialog.Builder (this);
+			LoginRepository lr = new LoginRepository (login);
+			Login x = lr.GetPassword ();
+			Thread.Sleep(1000);
+
+			if (lr.ExistDatabase()) {
+				//lr.GetConnection ();
+				login.CheckPassword();
+
+				/*var builder = new AlertDialog.Builder (this);
 				builder.SetTitle ("Login Error").SetMessage("U kunt zich niet inloggen");
-				builder.Create ().Show ();
+				builder.Create ().Show ();*/
+			}else {
+				StartActivity (typeof(MenuScreen));
 			}
 		}
 

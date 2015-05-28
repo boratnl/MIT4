@@ -1,20 +1,22 @@
-﻿<Properties StartupItem="ZuydApp\ZuydApp.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Droid\RegisterDialog.cs">
+﻿<Properties StartupItem="Droid\ZuydApp.Droid.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Device" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid\MainActivity.cs">
     <Files>
-      <File FileName="Droid\MainActivity.cs" Line="59" Column="4" />
-      <File FileName="ZuydApp\Register.cs" Line="11" Column="1" />
-      <File FileName="Droid\RegisterDialog.cs" Line="45" Column="68" />
-      <File FileName="Droid\Resources\values\styles.xml" Line="1" Column="1" />
-      <File FileName="Droid\Resources\anim\slide_down.xml" Line="1" Column="1" />
-      <File FileName="Droid\Resources\anim\slide_up.xml" Line="1" Column="1" />
+      <File FileName="Droid\MainActivity.cs" Line="58" Column="33" />
+      <File FileName="ZuydApp\Login.cs" Line="75" Column="21" />
+      <File FileName="Droid\DatabaseSQLite\LoginRepository.cs" Line="70" Column="20" />
+      <File FileName="ZuydApp\DatabaseSQLite\IRepository.cs" Line="1" Column="1" />
+      <File FileName="Droid\packages.config" Line="1" Column="1" />
       <File FileName="Droid\MenuScreen.cs" Line="1" Column="1" />
-      <File FileName="Droid\Resources\drawable\ProgressBarStyle.xml" Line="1" Column="1" />
-      <File FileName="ZuydApp\Login.cs" Line="17" Column="18" />
+      <File FileName="Droid\RegisterDialog.cs" Line="1" Column="1" />
+      <File FileName="Droid\Logindata.cs" Line="1" Column="1" />
+      <File FileName="ZuydApp\Register.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\MainActivity.cs" line="49" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.ZuydApp.Droid AndroidDesignerPreferredDevice="Nexus 4" />

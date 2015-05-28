@@ -11,3 +11,14 @@ C:\Users\Gebruiker\Documents\Projects\ZuydApp\ZuydApp\obj\Debug\ZuydApp.dll
 C:\Users\Gebruiker\Documents\Projects\ZuydApp\ZuydApp\obj\Debug\ZuydApp.pdb
 C:\Users\Gebruiker\Documents\Projects\ZuydApp\ZuydApp\obj\Debug\ZuydApp.csprojResolveAssemblyReference.cache
 C:\Users\Gebruiker\Documents\Projects\ZuydApp\ZuydApp\bin\Debug\ZuydApp.dll.config
+C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\bin\Debug\ZuydApp.dll.config
+C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\bin\Debug\ZuydApp.dll
+C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\bin\Debug\ZuydApp.pdb
+C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\bin\Debug\Mono.Data.Sqlite.dll
+C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\bin\Debug\SQLite-net.dll
+C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\bin\Debug\SQLitePCL.raw.dll
+C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\bin\Debug\System.Data.Portable.dll
+C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\bin\Debug\System.Transactions.Portable.dll
+C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\obj\Debug\ZuydApp.dll
+C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\obj\Debug\ZuydApp.pdb
+C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\obj\Debug\ZuydApp.csprojResolveAssemblyReference.cache
