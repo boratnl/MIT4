@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.IO;
 using Mono.Data.Sqlite;
+using System.Data;
+using Android.App;
+using System.Net;
+using System.Data.SqlClient;
 
 namespace ZuydApp.Droid
 {
@@ -17,7 +21,7 @@ namespace ZuydApp.Droid
 
 		public LoginRepository()
 		{
-		
+			
 		}
 
 		public SqliteConnection GetConnection()
@@ -46,7 +50,6 @@ namespace ZuydApp.Droid
 		private void CreateDatabase (SqliteConnection connection)
 		{
 			var sql = "CREATE TABLE Login (Id INTEGER PRIMARY KEY AUTOINCREMENT, Username ntext, Password ntext, Modified datetime);";
-
 			connection.Open ();
 
 			using(var cmd = connection.CreateCommand()){
@@ -58,8 +61,8 @@ namespace ZuydApp.Droid
 
 			using(var cmd = connection.CreateCommand()){
 				cmd.CommandText = sql;
-				cmd.Parameters.AddWithValue ("@Username", _login._username);
-				cmd.Parameters.AddWithValue ("@Password", _login._password);
+				cmd.Parameters.AddWithValue ("@Username", _login.propUsername);
+				cmd.Parameters.AddWithValue ("@Password", _login.propPassword);
 				cmd.Parameters.AddWithValue ("@Modified",DateTime.Now);
 				cmd.ExecuteNonQuery ();
 			}
@@ -67,17 +70,17 @@ namespace ZuydApp.Droid
 			connection.Close ();
 		}
 
-		public Login GetPassword()
+		public Login GetAllUsers()
 		{
-			var sqlQuery = "SELECT * FROM Logins;";
+			var sqlQuery = "SELECT Username, Password FROM Login;";
 
 			using (var conn = GetConnection ()) {
 				conn.Open ();
 				using(var cmd = conn.CreateCommand()){
 					cmd.CommandText = sqlQuery;
 					using(var reader = cmd.ExecuteReader()){
-						if (reader.Read()) {
-							return new Login (reader.GetInt32 (0), reader.GetString (1), reader.GetString (2), reader.GetDateTime (3));
+						if (reader.Read ()) {
+							return new Login (reader.GetString (0), reader.GetString (1));
 						} else {
 							return null;
 						}

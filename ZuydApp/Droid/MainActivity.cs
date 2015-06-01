@@ -23,10 +23,11 @@ namespace ZuydApp.Droid
 
 		protected override void OnCreate(Bundle bundle)
 		{
-			/*LoginRepository lr = new LoginRepository ();
-			if (lr.ExistDatabase()) {
+			LoginRepository lr = new LoginRepository ();
+			//Login loginFromSQLite = lr.GetAllUsers ();
+			if (!lr.ExistDatabase()) {
 				StartActivity(typeof(MenuScreen));				
-			}*/
+			}
 			base.OnCreate(bundle);
 			SetContentView(Resource.Layout.Login);
 
@@ -42,22 +43,39 @@ namespace ZuydApp.Droid
 			//_btdnSignIn.Click += _btnSignIn_Click;
 		}
 
-		void _btnLogIn_Click (object sender, EventArgs e)
+		async void _btnLogIn_Click (object sender, EventArgs e)
 		{
+			//SqlServer sqlserver = new SqlServer ();
+                                			//sqlserver.getConnection ();
 			Login login = new Login (_etEmail.Text, _etPassword.Text, _cbRemember.Checked);
 			LoginRepository lr = new LoginRepository (login);
-			Login x = lr.GetPassword ();
-			Thread.Sleep(1000);
+			string loginCheck = await login.Fetch ();
 
-			if (lr.ExistDatabase()) {
-				//lr.GetConnection ();
-				login.CheckPassword();
+			//Login x = lr.GetPassword ();
+			//Thread.Sleep(1000);
 
-				/*var builder = new AlertDialog.Builder (this);
-				builder.SetTitle ("Login Error").SetMessage("U kunt zich niet inloggen");
-				builder.Create ().Show ();*/
+			if (loginCheck == "true") {
+				if (login.propRemember) {
+					bool HeeftDatabase = lr.ExistDatabase ();
+					if (HeeftDatabase) {
+
+					} else {
+						lr.GetConnection ();
+					}
+				}
+				var activityMenuScreen = new Intent (this, typeof(MenuScreen));
+				activityMenuScreen.PutExtra ("LoginData", new string[]{ login.propUsername, login.propPassword });
+				StartActivity (activityMenuScreen);
+
+			} else if (loginCheck == "Account niet geactiveerd")
+			{
+				var builder = new AlertDialog.Builder (this);
+				builder.SetTitle ("Login Error").SetMessage ("Het account is niet geactiveerd");
+				builder.Create ().Show ();
 			}else {
-				StartActivity (typeof(MenuScreen));
+				var builder = new AlertDialog.Builder (this);
+				builder.SetTitle ("Login Error").SetMessage ("Het inlog scherm is niet correct");
+				builder.Create ().Show ();
 			}
 		}
 
@@ -81,7 +99,7 @@ namespace ZuydApp.Droid
 		{
 			Thread.Sleep(3000);
 			RunOnUiThread(() => { _progressBar.Visibility = ViewStates.Invisible; });
-			StartActivity(typeof(MenuScreen));
+			StartActivity(typeof(MainActivity));
 		}
 	}
 }

@@ -1,13 +1,20 @@
 ﻿using System;
 using Mono.Data.Sqlite;
+using System.Net;
+using System.Data;
+using RestSharp;
+using System.Net.Http;
+using System.Threading.Tasks;
+using RestSharp.Portable;
+using Newtonsoft.Json;
 
 namespace ZuydApp
 {
 	public class Login
 	{
-		public string _username;
-		public string _password;
-		public bool _remember;
+		private string _username;
+		private string _password;
+		private bool _remember;
 
 		public string propUsername {
 			get {
@@ -48,46 +55,41 @@ namespace ZuydApp
 			SetDataOffline ();
 		}
 
-		public Login (int id, string username, string password, DateTime date)
+		public Login (string username, string password)
 		{
 			
 		}
 
 		public void SetDataOffline ()
 		{
-
+			
 		}
 
 		public bool CheckIfDataIsOffline ()
 		{
+			
 			return false;
 		}
-
-		public bool CheckPassword ()
+			
+		public async Task<string> Fetch()
 		{
-			string text = "";
-			SqliteConnection sqlconn;
-			string connsqlstring = string.Format ("Server=pdb14.awardspace.net;Database=1670359_darts;Password=ammi11amkreutz;Username=1670359_darts");
-			sqlconn = new SqliteConnection (connsqlstring);
-
-			var sqlQuery = "SELECT * FROM Nieuws;";
-
-			using (sqlconn) {
-				sqlconn.Open ();
-				using (var cmd = sqlconn.CreateCommand ()) {
-					cmd.CommandText = sqlQuery;
-					using (var reader = cmd.ExecuteReader ()) {
-						if (reader.Read ()) {
-							text = reader.ToString();
-						} else {
-							text = "";
-						}
-					}
-				}
+			string LoginCheck = "false";
+			var client = new RestClient ("http://www.sictma.com/zuydapp/getLogin.php");
+			var request = new RestRequest ("?Username={username}&Password={password}", HttpMethod.Get);
+			request.AddUrlSegment ("username",propUsername);
+			request.AddUrlSegment ("password",propPassword);
+			var result = await client.Execute (request);
+			string resultString = System.Text.Encoding.UTF8.GetString (result.RawBytes, 0, result.RawBytes.Length);
+			if (resultString == "true") {
+				LoginCheck = "true";
 			}
+			else if(resultString == "Account niet geactiveerd")
+			{
+				LoginCheck = "Account niet geactiveerd";
+			}
+			//var loginData = JsonConvert.DeserializeObject<Login> (resultString);
 
-			return false;
+			return LoginCheck;
 		}
 	}
 }
-

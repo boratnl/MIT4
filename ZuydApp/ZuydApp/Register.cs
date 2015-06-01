@@ -1,34 +1,38 @@
 ﻿using System;
-using System.Collections.Generic; 
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using RestSharp.Portable;
+using System.Net.Http; 
 
 namespace ZuydApp
 {
 	public class Register
 	{
-		private string _name;
+		private string _username;
 		private string _email;
 		private string _password;
 
-		public Register (string email, string password)
+		public Register (string username, string email, string password)
 		{
+			_username = username;
 			_email = email;
 			_password = password;
-			sendConfirmEmail ();
+			InsertUserInDatabase ();
 		}
 		//properties van oma kutjes
-		public string Name
+		public string propUsername
 		{
-			get { return _name; }
-			set { _name = value; }
+			get { return _username; }
+			set { _username = value; }
 		}
 
-		public string Email
+		public string propEmail
 		{
 			get { return _email; }
 			set { _email = value; }
 		}
 
-		public string Password
+		public string propPassword
 		{
 			get { return _password; }
 			set { _password = value; }
@@ -37,6 +41,18 @@ namespace ZuydApp
 		public void sendConfirmEmail()
 		{
 			
+		}
+
+		public async Task<string> InsertUserInDatabase()
+		{
+			var client = new RestClient ("http://www.sictma.com/zuydapp/insertAccount.php");
+			var request = new RestRequest ("?Username={username}&Password={password}&Email={email}", HttpMethod.Get);
+			request.AddUrlSegment ("username",propUsername);
+			request.AddUrlSegment ("password",propPassword);
+			request.AddUrlSegment ("email",propEmail);
+			var result = await client.Execute (request);
+			string resultString = System.Text.Encoding.UTF8.GetString (result.RawBytes, 0, result.RawBytes.Length);
+			return resultString;
 		}
 
 		/*public bool Login(string username, string password)

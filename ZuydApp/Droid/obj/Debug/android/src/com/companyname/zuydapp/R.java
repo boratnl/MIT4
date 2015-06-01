@@ -26,17 +26,18 @@ public final class R {
         public static final int PgbLogin=0x7f060006;
         public static final int TxtEmailLogin=0x7f060001;
         public static final int TxtPasswordLogin=0x7f060002;
-        public static final int btnCreateRegister=0x7f06000f;
-        public static final int button1=0x7f060007;
-        public static final int button2=0x7f060008;
-        public static final int button3=0x7f060009;
-        public static final int button4=0x7f06000a;
+        public static final int btnCreateRegister=0x7f060010;
+        public static final int button1=0x7f060008;
+        public static final int button2=0x7f060009;
+        public static final int button3=0x7f06000a;
+        public static final int button4=0x7f06000b;
         public static final int imageView1=0x7f060000;
-        public static final int progressBarRegister=0x7f060010;
-        public static final int txtEmailRegister=0x7f06000b;
-        public static final int txtNumberRegister=0x7f06000c;
-        public static final int txtPassword1Register=0x7f06000d;
-        public static final int txtPassword2Register=0x7f06000e;
+        public static final int txtEmailRegister=0x7f06000d;
+        public static final int txtErrorRegister=0x7f060011;
+        public static final int txtPassword1Register=0x7f06000e;
+        public static final int txtPassword2Register=0x7f06000f;
+        public static final int txtUsernameMenu=0x7f060007;
+        public static final int txtUsernameRegister=0x7f06000c;
     }
     public static final class layout {
         public static final int login=0x7f030000;

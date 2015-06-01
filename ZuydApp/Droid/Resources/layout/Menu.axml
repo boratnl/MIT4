@@ -10,6 +10,14 @@
         android:layout_width="wrap_content"
         android:layout_height="130.8dp"
         android:id="@+id/imageView1" />
+    <TextView
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUsernameMenu"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal" />
     <Button
         android:text="Button"
         android:layout_width="match_parent"

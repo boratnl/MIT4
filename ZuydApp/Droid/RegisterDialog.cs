@@ -16,6 +16,8 @@ namespace ZuydApp.Droid
 	[Activity (Label = "Register")]			
 	public class RegisterDialog : DialogFragment
 	{
+		private TextView _txtError;
+		private EditText _txtUsername;
 		private EditText _txtEmail;
 		private EditText _txtPassword1;
 		private EditText _txtPassword2;
@@ -29,6 +31,8 @@ namespace ZuydApp.Droid
 
 			var view = inflater.Inflate(Resource.Layout.Register, container, false);
 
+			_txtError = view.FindViewById<TextView> (Resource.Id.txtErrorRegister);
+			_txtUsername = view.FindViewById<EditText> (Resource.Id.txtUsernameRegister);
 			_txtEmail = view.FindViewById<EditText>(Resource.Id.txtEmailRegister);
 			_txtPassword1 = view.FindViewById<EditText>(Resource.Id.txtPassword1Register);
 			_txtPassword2 = view.FindViewById<EditText>(Resource.Id.txtPassword2Register);
@@ -39,18 +43,24 @@ namespace ZuydApp.Droid
 			return view;
 		}
 
-		void BtnSignUp_Click(object sender, EventArgs e)
+		async void BtnSignUp_Click(object sender, EventArgs e)
 		{
+			Register register = new Register (_txtUsername.Text, _txtEmail.Text, _txtPassword1.Text);
 			if (_txtPassword1.Text == _txtPassword2.Text) {
-				_onSignUpComplete.Invoke (this, new ZuydApp.Register (_txtEmail.Text, _txtPassword1.Text));
+				_onSignUpComplete.Invoke (this,register);
+				string registerError = await register.InsertUserInDatabase();
+				if (registerError.Length > 0 && registerError == "false") {
+					_txtError.Text = registerError;
+				} else {
+					_txtError.Text = "succesvol";
+					/*var activityMenuScreen = new Intent (this, typeof(MenuScreen));
+					activityMenuScreen.PutExtra ("LoginData", new string[]{ register.propUsername, register.propPassword });
+					StartActivity (activityMenuScreen);*/
+
+				}
 				this.Dismiss ();
 			} else {
-				/*var builder = new AlertDialog.Builder (this);
-				builder.SetTitle ("Hello Dialog")
-					.SetMessage ("Is this material design?")
-					.SetPositiveButton ("Yes", delegate { Console.WriteLine("Yes"); })
-					.SetNegativeButton ("No", delegate { Console.WriteLine("No"); });
-				builder.Create().Show ();*/
+				_txtError.Text = "De wachtwoorden komen niet overeen.";
 			}
 		}
 
