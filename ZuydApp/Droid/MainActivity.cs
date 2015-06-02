@@ -25,7 +25,7 @@ namespace ZuydApp.Droid
 		{
 			LoginRepository lr = new LoginRepository ();
 			//Login loginFromSQLite = lr.GetAllUsers ();
-			if (!lr.ExistDatabase()) {
+			if (lr.ExistDatabase()) {
 				StartActivity(typeof(MenuScreen));				
 			}
 			base.OnCreate(bundle);

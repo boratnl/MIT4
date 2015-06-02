@@ -47,18 +47,22 @@ namespace ZuydApp.Droid
 		{
 			Register register = new Register (_txtUsername.Text, _txtEmail.Text, _txtPassword1.Text);
 			if (_txtPassword1.Text == _txtPassword2.Text) {
-				_onSignUpComplete.Invoke (this,register);
-				string registerError = await register.InsertUserInDatabase();
-				if (registerError.Length > 0 && registerError == "false") {
-					_txtError.Text = registerError;
-				} else {
-					_txtError.Text = "succesvol";
-					/*var activityMenuScreen = new Intent (this, typeof(MenuScreen));
+				if (_txtEmail.Text.EndsWith ("@zuyd.nl")) {
+					_onSignUpComplete.Invoke (this, register);
+					string registerError = await register.InsertUserInDatabase ();
+					if (registerError.Length > 0 && registerError == "false") {
+						_txtError.Text = registerError;
+					} else {
+						_txtError.Text = "succesvol";
+						/*var activityMenuScreen = new Intent (this, typeof(MenuScreen));
 					activityMenuScreen.PutExtra ("LoginData", new string[]{ register.propUsername, register.propPassword });
 					StartActivity (activityMenuScreen);*/
 
+					}
+					this.Dismiss ();
+				} else {
+					_txtError.Text = "Het email adres moet een Zuyd email adres zijn.";
 				}
-				this.Dismiss ();
 			} else {
 				_txtError.Text = "De wachtwoorden komen niet overeen.";
 			}

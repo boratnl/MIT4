@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:padding="10dp"
     android:background="#C3D8DF">
+<!--<Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:layout_alignParentTop="true" />-->
     <ImageView
         android:src="@drawable/zuyd_logo"
         android:layout_width="wrap_content"
@@ -34,8 +42,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/button3" />
     <Button
-        android:text="Button"
+        android:text="Schoolfeedback"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button4" />
+        android:id="@+id/btnSchoolFeedbackMenu" />
 </LinearLayout>

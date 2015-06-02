@@ -1,8 +1,35 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    >
+    android:padding="10dp">
+    <ImageView
+        android:src="@drawable/zuyd_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="130.8dp"
+        android:id="@+id/imageView1" />
+    <Button
+        android:text="Feedback Verzenden"
+        android:layout_width="match_parent"
+        android:minHeight="25dp"
+        android:layout_height="53.8dp"
+        android:id="@+id/btnVerzendenSchoolfeedback"
+        android:background="#ff6d5f5f"
+        android:layout_marginTop="10dp" />
+    <EditText
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/edtMessageSchoolfeedback"
+        android:background="@android:color/white"
+        android:hint="Typ hier je algemene schoolfeedback"
+        android:textColor="#ff000000"
+        android:textColorHighlight="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColorLink="@android:color/black"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="top"
+        android:gravity="top" />
 </LinearLayout>
-
