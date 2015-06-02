@@ -28,11 +28,11 @@ C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\bin\Debug\System.Net.H
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\bin\Debug\System.Transactions.Portable.dll
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\bin\Debug\Microsoft.Threading.Tasks.xml
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\bin\Debug\RestSharp.Portable.xml
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\bin\Debug\System.Net.Http.xml
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\bin\Debug\System.Net.Http.Extensions.xml
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\bin\Debug\System.Net.Http.Primitives.xml
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\bin\Debug\RestSharp.Portable.xml
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\obj\Debug\ZuydApp.csproj.App.config
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\obj\Debug\ZuydApp.dll
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\obj\Debug\ZuydApp.pdb

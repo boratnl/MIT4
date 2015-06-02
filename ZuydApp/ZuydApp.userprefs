@@ -1,10 +1,14 @@
 ﻿<Properties StartupItem="Droid\ZuydApp.Droid.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.19a0aaaf" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Device" />
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="Droid\MenuScreen.cs" Line="1" Column="1" />
+      <File FileName="Droid\RegisterDialog.cs" Line="1" Column="1" />
+      <File FileName="Droid\Resources\values\styleXML.xml" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\DatabaseSQLite\SqlServer.cs" line="20" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.ZuydApp.Droid AndroidDesignerPreferredDevice="Nexus 4" />

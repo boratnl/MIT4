@@ -60,9 +60,6 @@
     <Reference Include="Xamarin.Android.Support.v7.AppCompat">
       <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.22.1.1.1\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
     </Reference>
-    <Reference Include="ActionBarSherlock">
-      <HintPath>..\packages\XamarinActionBarSherlock.4.4.0.0\lib\MonoAndroid\ActionBarSherlock.dll</HintPath>
-    </Reference>
     <Reference Include="Mono.Android.Support.v4" />
   </ItemGroup>
   <ItemGroup>
@@ -106,10 +103,8 @@
     <AndroidResource Include="Resources\anim\slide_up.xml" />
     <AndroidResource Include="Resources\drawable\ProgressBarStyle.xml" />
     <AndroidResource Include="Resources\layout\Schoolfeedback.axml" />
-    <AndroidResource Include="Resources\menu\toolbar_menu.xml" />
-    <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="Resources\values\styleXML.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <Import Project="..\packages\SQLitePCL.raw_basic.0.8.0\build\MonoAndroid\SQLitePCL.raw_basic.targets" Condition="Exists('..\packages\SQLitePCL.raw_basic.0.8.0\build\MonoAndroid\SQLitePCL.raw_basic.targets')" />
-  <Import Project="..\packages\xamstore-XamarinActionBarSherlock.4.4.0.4\build\monoandroid\xamstore-XamarinActionBarSherlock.props" Condition="Exists('..\packages\xamstore-XamarinActionBarSherlock.4.4.0.4\build\monoandroid\xamstore-XamarinActionBarSherlock.props')" />
 </Project>

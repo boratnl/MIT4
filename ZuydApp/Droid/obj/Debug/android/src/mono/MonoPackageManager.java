@@ -84,6 +84,8 @@ class MonoPackageManager_Resources {
 		"SQLitePCL.raw.dll",
 		"System.Data.Portable.dll",
 		"System.Transactions.Portable.dll",
+		"Xamarin.Android.Support.v4.dll",
+		"Xamarin.Android.Support.v7.AppCompat.dll",
 		"ZuydApp.dll",
 		"System.Collections.Concurrent.dll",
 		"System.Collections.dll",

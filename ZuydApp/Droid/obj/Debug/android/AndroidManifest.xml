@@ -9,6 +9,7 @@
       </intent-filter>
     </activity>
     <activity android:label="MenuScreen" android:name="md5117758b96ce9c2c728bac684a7ffe8d5.MenuScreen" />
+    <activity android:label="Schoolfeedback" android:name="md5117758b96ce9c2c728bac684a7ffe8d5.Schoolfeedback" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="com.companyname.zuydapp.mono.MonoRuntimeProvider.__mono_init__" />
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>

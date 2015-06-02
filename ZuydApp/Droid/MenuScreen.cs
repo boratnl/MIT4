@@ -12,12 +12,11 @@ using Android.Views;
 using Android.Widget;
 using Android.Support.V7;
 using SupportToolbar = Android.Support.V7.Widget.Toolbar; 
-using Xamarin.ActionbarSherlockBinding.App;
 
 namespace ZuydApp.Droid
 {
 	[Activity (Label = "MenuScreen")]			
-	public class MenuScreen : Activity, SherlockActivity
+	public class MenuScreen : Activity
 	{
 		//string[0] = username
 		//string[1] = password
@@ -28,8 +27,6 @@ namespace ZuydApp.Droid
 		
 		protected override void OnCreate(Bundle bundle)
 		{
-			SetTheme(
-
 		  	if(Intent.GetStringArrayExtra("LoginData") != null)
 				_arLogin = Intent.GetStringArrayExtra ("LoginData");
 			else

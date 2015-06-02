@@ -1390,9 +1390,6 @@ namespace ZuydApp.Droid
 			// aapt resource value: 0x7f090025
 			public const int action_mode_close_button = 2131296293;
 			
-			// aapt resource value: 0x7f090063
-			public const int action_reply = 2131296355;
-			
 			// aapt resource value: 0x7f090026
 			public const int activity_chooser_view_content = 2131296294;
 			
@@ -1773,22 +1770,6 @@ namespace ZuydApp.Droid
 			}
 			
 			private Layout()
-			{
-			}
-		}
-		
-		public partial class Menu
-		{
-			
-			// aapt resource value: 0x7f0c0000
-			public const int toolbar_menu = 2131492864;
-			
-			static Menu()
-			{
-				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
-			}
-			
-			private Menu()
 			{
 			}
 		}
