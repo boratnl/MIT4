@@ -11,7 +11,7 @@ namespace ZuydApp.Droid
 {
 	public class LoginRepository
 	{
-		private static string db_file = "Login.db3";
+		public static string db_file = "Login.db3";
 		public Login _login;
 
 		public LoginRepository (Login login)

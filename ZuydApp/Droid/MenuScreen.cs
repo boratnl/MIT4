@@ -46,12 +46,23 @@ namespace ZuydApp.Droid
 				StartActivity (activitySchoolFeedback);
 			};
 		}
-
-
-		 
+			
 		public override bool OnCreateOptionsMenu (IMenu menu)
 		{
+			MenuInflater.Inflate (Resource.Menu.menuActionBar, menu);
 			return base.OnCreateOptionsMenu (menu);
+		}
+
+		public override bool OnOptionsItemSelected(IMenuItem item)
+		{
+			base.OnOptionsItemSelected (item);
+			switch(item.ItemId){
+			case Resource.Id.abLogOut:
+				new LogOut().DeleteSqlDatabase(this);
+				StartActivity (typeof(MainActivity));
+				break;
+			}
+			return true;
 		}
 	}
 }

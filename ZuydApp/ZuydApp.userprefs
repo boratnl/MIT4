@@ -1,10 +1,11 @@
 ﻿<Properties StartupItem="Droid\ZuydApp.Droid.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Device" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.19a0aaaf" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid\MenuScreen.cs">
     <Files>
-      <File FileName="Droid\MenuScreen.cs" Line="1" Column="1" />
+      <File FileName="Droid\MenuScreen.cs" Line="33" Column="4" />
       <File FileName="Droid\RegisterDialog.cs" Line="1" Column="1" />
       <File FileName="Droid\Resources\values\styleXML.xml" Line="1" Column="1" />
+      <File FileName="Droid\Schoolfeedback.cs" Line="33" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

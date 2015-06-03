@@ -32,7 +32,8 @@ namespace ZuydApp.Droid
 			SetContentView(Resource.Layout.Schoolfeedback);
 			_btnVerzenden = FindViewById<Button> (Resource.Id.btnVerzendenSchoolfeedback);
 			_edtMessage = FindViewById<EditText> (Resource.Id.edtMessageSchoolfeedback);
-			// Create your application here
+			_btnVerzenden.SetBackgroundColor(Android.Graphics.Color.White);
+			_btnVerzenden.SetTextColor (Android.Graphics.Color.Black);
 			_btnVerzenden.Click += (object sender, EventArgs e) => {
 				ZuydApp.Schoolfeedback sf = new ZuydApp.Schoolfeedback(_arLogin[0], _edtMessage.Text);
 				sf.SendEmail();
@@ -40,6 +41,24 @@ namespace ZuydApp.Droid
 				activityMenuScreen.PutExtra ("LoginData", new string[]{ _arLogin[0], _arLogin[1] });
 				StartActivity (activityMenuScreen);
 			};
+		}
+
+		public override bool OnCreateOptionsMenu (IMenu menu)
+		{
+			MenuInflater.Inflate (Resource.Menu.menuActionBar, menu);
+			return base.OnCreateOptionsMenu (menu);
+		}
+
+		public override bool OnOptionsItemSelected(IMenuItem item)
+		{
+			base.OnOptionsItemSelected (item);
+			switch(item.ItemId){
+			case Resource.Id.abLogOut:
+				new LogOut().DeleteSqlDatabase(this);
+				StartActivity (typeof(MainActivity));
+				break;
+			}
+			return true;
 		}
 	}
 }

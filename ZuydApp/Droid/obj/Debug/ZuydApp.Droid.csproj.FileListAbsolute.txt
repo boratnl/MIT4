@@ -70,3 +70,4 @@ C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\res\layout\sch
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\res\values\stylexml.xml
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\R.cs.flag
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\uploadflags.txt
+C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\res\menu\menuactionbar.xml

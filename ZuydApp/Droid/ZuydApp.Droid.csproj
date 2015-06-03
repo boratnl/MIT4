@@ -76,11 +76,11 @@
     <Compile Include="MenuScreen.cs" />
     <Compile Include="DatabaseSQLite\LoginRepository.cs" />
     <Compile Include="Schoolfeedback.cs" />
+    <Compile Include="DatabaseSQLite\LogOut.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
-    <None Include="Assets\AboutAssets.txt" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -104,6 +104,7 @@
     <AndroidResource Include="Resources\drawable\ProgressBarStyle.xml" />
     <AndroidResource Include="Resources\layout\Schoolfeedback.axml" />
     <AndroidResource Include="Resources\values\styleXML.xml" />
+    <AndroidResource Include="Resources\menu\menuActionBar.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <Import Project="..\packages\SQLitePCL.raw_basic.0.8.0\build\MonoAndroid\SQLitePCL.raw_basic.targets" Condition="Exists('..\packages\SQLitePCL.raw_basic.0.8.0\build\MonoAndroid\SQLitePCL.raw_basic.targets')" />

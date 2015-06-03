@@ -1,0 +1,8 @@
+﻿<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+	android:id="@+id/abLogOut"
+	android:title="Log uit"
+	android:orderInCategory="1"
+	android:showAsAction="ifRoom"/>
+
+</menu>
