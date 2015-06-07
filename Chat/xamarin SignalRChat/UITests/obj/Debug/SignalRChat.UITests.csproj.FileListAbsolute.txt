@@ -1,0 +1,9 @@
+C:\Users\Menno\Documents\Projects\SignalRChat\UITests\bin\Debug\SignalRChat.UITests.dll
+C:\Users\Menno\Documents\Projects\SignalRChat\UITests\bin\Debug\SignalRChat.UITests.pdb
+C:\Users\Menno\Documents\Projects\SignalRChat\UITests\bin\Debug\nunit.framework.dll
+C:\Users\Menno\Documents\Projects\SignalRChat\UITests\bin\Debug\Xamarin.UITest.dll
+C:\Users\Menno\Documents\Projects\SignalRChat\UITests\bin\Debug\nunit.framework.xml
+C:\Users\Menno\Documents\Projects\SignalRChat\UITests\bin\Debug\Xamarin.UITest.xml
+C:\Users\Menno\Documents\Projects\SignalRChat\UITests\obj\Debug\SignalRChat.UITests.csprojResolveAssemblyReference.cache
+C:\Users\Menno\Documents\Projects\SignalRChat\UITests\obj\Debug\SignalRChat.UITests.dll
+C:\Users\Menno\Documents\Projects\SignalRChat\UITests\obj\Debug\SignalRChat.UITests.pdb

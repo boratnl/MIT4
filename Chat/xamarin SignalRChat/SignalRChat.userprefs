@@ -1,0 +1,16 @@
+﻿<Properties StartupItem="Droid\SignalRChat.Droid.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus 10 (KitKat)" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid\MainActivity.cs">
+    <Files>
+      <File FileName="SignalRChat\Client.cs" Line="1" Column="1" />
+      <File FileName="Droid\MainActivity.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\Menno\Documents\Projects\SignalRChat\Droid\MainActivity.cs" line="38" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.SignalRChat.Droid AndroidDesignerPreferredDevice="Nexus 4" />
+</Properties>

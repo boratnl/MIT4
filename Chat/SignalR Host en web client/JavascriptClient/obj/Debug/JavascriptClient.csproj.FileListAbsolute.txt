@@ -1,0 +1,5 @@
+C:\Users\Menno\Desktop\C#\JavascriptClient\bin\JavascriptClient.dll
+C:\Users\Menno\Desktop\C#\JavascriptClient\bin\JavascriptClient.pdb
+C:\Users\Menno\Desktop\C#\JavascriptClient\obj\Debug\JavascriptClient.csprojResolveAssemblyReference.cache
+C:\Users\Menno\Desktop\C#\JavascriptClient\obj\Debug\JavascriptClient.dll
+C:\Users\Menno\Desktop\C#\JavascriptClient\obj\Debug\JavascriptClient.pdb
