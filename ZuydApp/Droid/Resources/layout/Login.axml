@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/TxtEmailLogin"
-        android:hint="Email"
+        android:hint="Username"
         android:layout_marginTop="25dp"
         android:textColor="@android:color/black"
         android:textColorHint="@android:color/black"

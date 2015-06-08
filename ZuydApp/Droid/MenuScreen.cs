@@ -23,6 +23,7 @@ namespace ZuydApp.Droid
 		public string[] _arLogin;
 		private TextView _tvUsername;
 		private Button _btnSchoolFeedback;
+		private Button _btnMijnSchoolvakken;
 		//private SupportToolbar mToolbar;
 		
 		protected override void OnCreate(Bundle bundle)
@@ -37,13 +38,20 @@ namespace ZuydApp.Droid
 			//mToolbar = FindViewById<SupportToolbar> (Resource.Id.toolbar);
 			//mToolbar.InflateMenu (Resource.Menu.toolbar_menu);
 			_btnSchoolFeedback = (Button)FindViewById(Resource.Id.btnSchoolFeedbackMenu);
+			_btnMijnSchoolvakken = (Button)FindViewById (Resource.Id.btnMijnVakken);
 			_tvUsername = (TextView)FindViewById (Resource.Id.txtUsernameMenu);
 			//_tvUsername.Text = _arLogin[0];
 			_tvUsername.Text = "ddd";
 			_btnSchoolFeedback.Click += (object sender, EventArgs e) => {
-				var activitySchoolFeedback = new Intent (this, typeof(Schoolfeedback));
+				var activityMijnVakken = new Intent (this, typeof(Schoolfeedback));
+				activityMijnVakken.PutExtra ("LoginData", new string[]{ _arLogin[0], _arLogin[1] });
+				StartActivity (activityMijnVakken);
+			};
+			_btnMijnSchoolvakken.Click += (object sender, EventArgs e) => {
+				var activitySchoolFeedback = new Intent (this, typeof(EigenVakken));
 				activitySchoolFeedback.PutExtra ("LoginData", new string[]{ _arLogin[0], _arLogin[1] });
 				StartActivity (activitySchoolFeedback);
+
 			};
 		}
 			

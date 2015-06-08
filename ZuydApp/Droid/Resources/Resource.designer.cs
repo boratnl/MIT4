@@ -1312,13 +1312,16 @@ namespace ZuydApp.Droid
 			public const int abc_textfield_search_material = 2130837562;
 			
 			// aapt resource value: 0x7f02003b
-			public const int icon = 2130837563;
+			public const int applogo = 2130837563;
 			
 			// aapt resource value: 0x7f02003c
-			public const int ProgressBarStyle = 2130837564;
+			public const int icon = 2130837564;
 			
 			// aapt resource value: 0x7f02003d
-			public const int zuyd_logo = 2130837565;
+			public const int ProgressBarStyle = 2130837565;
+			
+			// aapt resource value: 0x7f02003e
+			public const int zuyd_logo = 2130837566;
 			
 			static Drawable()
 			{
@@ -1333,26 +1336,26 @@ namespace ZuydApp.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f080053
-			public const int BtnLoginLogin = 2131230803;
+			// aapt resource value: 0x7f080056
+			public const int BtnLoginLogin = 2131230806;
 			
-			// aapt resource value: 0x7f080054
-			public const int BtnRegisterLogin = 2131230804;
-			
-			// aapt resource value: 0x7f080052
-			public const int CbxRemberLogin = 2131230802;
+			// aapt resource value: 0x7f080057
+			public const int BtnRegisterLogin = 2131230807;
 			
 			// aapt resource value: 0x7f080055
-			public const int PgbLogin = 2131230805;
+			public const int CbxRemberLogin = 2131230805;
 			
-			// aapt resource value: 0x7f080050
-			public const int TxtEmailLogin = 2131230800;
+			// aapt resource value: 0x7f080058
+			public const int PgbLogin = 2131230808;
 			
-			// aapt resource value: 0x7f080051
-			public const int TxtPasswordLogin = 2131230801;
+			// aapt resource value: 0x7f080053
+			public const int TxtEmailLogin = 2131230803;
 			
-			// aapt resource value: 0x7f080063
-			public const int abLogOut = 2131230819;
+			// aapt resource value: 0x7f080054
+			public const int TxtPasswordLogin = 2131230804;
+			
+			// aapt resource value: 0x7f080068
+			public const int abLogOut = 2131230824;
 			
 			// aapt resource value: 0x7f080040
 			public const int action_bar = 2131230784;
@@ -1405,23 +1408,26 @@ namespace ZuydApp.Droid
 			// aapt resource value: 0x7f080013
 			public const int beginning = 2131230739;
 			
-			// aapt resource value: 0x7f08005f
-			public const int btnCreateRegister = 2131230815;
+			// aapt resource value: 0x7f080064
+			public const int btnCreateRegister = 2131230820;
 			
 			// aapt resource value: 0x7f08005a
-			public const int btnSchoolFeedbackMenu = 2131230810;
+			public const int btnMijnVakken = 2131230810;
 			
-			// aapt resource value: 0x7f080061
-			public const int btnVerzendenSchoolfeedback = 2131230817;
+			// aapt resource value: 0x7f08005d
+			public const int btnSchoolFeedbackMenu = 2131230813;
 			
-			// aapt resource value: 0x7f080057
-			public const int button1 = 2131230807;
+			// aapt resource value: 0x7f080066
+			public const int btnVerzendenSchoolfeedback = 2131230822;
 			
-			// aapt resource value: 0x7f080058
-			public const int button2 = 2131230808;
+			// aapt resource value: 0x7f08005e
+			public const int btn_OpslaanMijnVakken = 2131230814;
 			
-			// aapt resource value: 0x7f080059
-			public const int button3 = 2131230809;
+			// aapt resource value: 0x7f08005b
+			public const int button2 = 2131230811;
+			
+			// aapt resource value: 0x7f08005c
+			public const int button3 = 2131230812;
 			
 			// aapt resource value: 0x7f080036
 			public const int buttonPanel = 2131230774;
@@ -1459,8 +1465,8 @@ namespace ZuydApp.Droid
 			// aapt resource value: 0x7f080042
 			public const int edit_query = 2131230786;
 			
-			// aapt resource value: 0x7f080062
-			public const int edtMessageSchoolfeedback = 2131230818;
+			// aapt resource value: 0x7f080067
+			public const int edtMessageSchoolfeedback = 2131230823;
 			
 			// aapt resource value: 0x7f080014
 			public const int end = 2131230740;
@@ -1486,14 +1492,17 @@ namespace ZuydApp.Droid
 			// aapt resource value: 0x7f080028
 			public const int image = 2131230760;
 			
-			// aapt resource value: 0x7f08004f
-			public const int imageView1 = 2131230799;
+			// aapt resource value: 0x7f080052
+			public const int imageView1 = 2131230802;
 			
 			// aapt resource value: 0x7f080009
 			public const int listMode = 2131230729;
 			
 			// aapt resource value: 0x7f08002a
 			public const int list_item = 2131230762;
+			
+			// aapt resource value: 0x7f08005f
+			public const int lv_Vakken = 2131230815;
 			
 			// aapt resource value: 0x7f080015
 			public const int middle = 2131230741;
@@ -1521,6 +1530,9 @@ namespace ZuydApp.Droid
 			
 			// aapt resource value: 0x7f08003a
 			public const int radio = 2131230778;
+			
+			// aapt resource value: 0x7f080051
+			public const int ratingBar1 = 2131230801;
 			
 			// aapt resource value: 0x7f08001f
 			public const int screen = 2131230751;
@@ -1603,23 +1615,29 @@ namespace ZuydApp.Droid
 			// aapt resource value: 0x7f08002e
 			public const int topPanel = 2131230766;
 			
-			// aapt resource value: 0x7f08005c
-			public const int txtEmailRegister = 2131230812;
+			// aapt resource value: 0x7f080050
+			public const int tv_DocentMijnVakken = 2131230800;
+			
+			// aapt resource value: 0x7f08004f
+			public const int tv_TitelMijnVakken = 2131230799;
+			
+			// aapt resource value: 0x7f080061
+			public const int txtEmailRegister = 2131230817;
+			
+			// aapt resource value: 0x7f080065
+			public const int txtErrorRegister = 2131230821;
+			
+			// aapt resource value: 0x7f080062
+			public const int txtPassword1Register = 2131230818;
+			
+			// aapt resource value: 0x7f080063
+			public const int txtPassword2Register = 2131230819;
+			
+			// aapt resource value: 0x7f080059
+			public const int txtUsernameMenu = 2131230809;
 			
 			// aapt resource value: 0x7f080060
-			public const int txtErrorRegister = 2131230816;
-			
-			// aapt resource value: 0x7f08005d
-			public const int txtPassword1Register = 2131230813;
-			
-			// aapt resource value: 0x7f08005e
-			public const int txtPassword2Register = 2131230814;
-			
-			// aapt resource value: 0x7f080056
-			public const int txtUsernameMenu = 2131230806;
-			
-			// aapt resource value: 0x7f08005b
-			public const int txtUsernameRegister = 2131230811;
+			public const int txtUsernameRegister = 2131230816;
 			
 			// aapt resource value: 0x7f080008
 			public const int up = 2131230728;
@@ -1744,28 +1762,34 @@ namespace ZuydApp.Droid
 			public const int abc_simple_dropdown_hint = 2130903064;
 			
 			// aapt resource value: 0x7f030019
-			public const int Login = 2130903065;
+			public const int ListViewRowVakken = 2130903065;
 			
 			// aapt resource value: 0x7f03001a
-			public const int Menu = 2130903066;
+			public const int Login = 2130903066;
 			
 			// aapt resource value: 0x7f03001b
-			public const int Register = 2130903067;
+			public const int Menu = 2130903067;
 			
 			// aapt resource value: 0x7f03001c
-			public const int Schoolfeedback = 2130903068;
+			public const int MijnVakken = 2130903068;
 			
 			// aapt resource value: 0x7f03001d
-			public const int select_dialog_item_material = 2130903069;
+			public const int Register = 2130903069;
 			
 			// aapt resource value: 0x7f03001e
-			public const int select_dialog_multichoice_material = 2130903070;
+			public const int Schoolfeedback = 2130903070;
 			
 			// aapt resource value: 0x7f03001f
-			public const int select_dialog_singlechoice_material = 2130903071;
+			public const int select_dialog_item_material = 2130903071;
 			
 			// aapt resource value: 0x7f030020
-			public const int support_simple_spinner_dropdown_item = 2130903072;
+			public const int select_dialog_multichoice_material = 2130903072;
+			
+			// aapt resource value: 0x7f030021
+			public const int select_dialog_singlechoice_material = 2130903073;
+			
+			// aapt resource value: 0x7f030022
+			public const int support_simple_spinner_dropdown_item = 2130903074;
 			
 			static Layout()
 			{

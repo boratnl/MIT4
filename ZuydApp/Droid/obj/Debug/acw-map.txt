@@ -14,6 +14,14 @@ ZuydApp.Droid.Schoolfeedback, ZuydApp.Droid;md5117758b96ce9c2c728bac684a7ffe8d5.
 ZuydApp.Droid.Schoolfeedback, ZuydApp.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5117758b96ce9c2c728bac684a7ffe8d5.Schoolfeedback
 ZuydApp.Droid.Schoolfeedback;md5117758b96ce9c2c728bac684a7ffe8d5.Schoolfeedback
 zuydapp.droid.Schoolfeedback;md5117758b96ce9c2c728bac684a7ffe8d5.Schoolfeedback
+ZuydApp.Droid.EigenVakken, ZuydApp.Droid;md5117758b96ce9c2c728bac684a7ffe8d5.EigenVakken
+ZuydApp.Droid.EigenVakken, ZuydApp.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5117758b96ce9c2c728bac684a7ffe8d5.EigenVakken
+ZuydApp.Droid.EigenVakken;md5117758b96ce9c2c728bac684a7ffe8d5.EigenVakken
+zuydapp.droid.EigenVakken;md5117758b96ce9c2c728bac684a7ffe8d5.EigenVakken
+ZuydApp.Droid.VakkenAdapter, ZuydApp.Droid;md5117758b96ce9c2c728bac684a7ffe8d5.VakkenAdapter
+ZuydApp.Droid.VakkenAdapter, ZuydApp.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5117758b96ce9c2c728bac684a7ffe8d5.VakkenAdapter
+ZuydApp.Droid.VakkenAdapter;md5117758b96ce9c2c728bac684a7ffe8d5.VakkenAdapter
+zuydapp.droid.VakkenAdapter;md5117758b96ce9c2c728bac684a7ffe8d5.VakkenAdapter
 Android.Support.V4.View.ViewPager/IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.View.ViewPager/IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.View.ViewPager.IOnPageChangeListenerImplementor;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor

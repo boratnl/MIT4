@@ -39,7 +39,7 @@ namespace ZuydApp.Droid
 			return conn;
 		}
 
-		public bool ExistDatabase()
+		public bool ExistDatabase() 
 		{
 			var dbPath = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.Personal), db_file);
 			bool exists = File.Exists (dbPath);

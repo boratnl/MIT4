@@ -77,6 +77,8 @@
     <Compile Include="DatabaseSQLite\LoginRepository.cs" />
     <Compile Include="Schoolfeedback.cs" />
     <Compile Include="DatabaseSQLite\LogOut.cs" />
+    <Compile Include="EigenVakken.cs" />
+    <Compile Include="Adapters\VakkenAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -89,6 +91,7 @@
     <Folder Include="Resources\anim\" />
     <Folder Include="DatabaseSQLite\" />
     <Folder Include="Resources\menu\" />
+    <Folder Include="Adapters\" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\icon.png" />
@@ -105,6 +108,9 @@
     <AndroidResource Include="Resources\layout\Schoolfeedback.axml" />
     <AndroidResource Include="Resources\values\styleXML.xml" />
     <AndroidResource Include="Resources\menu\menuActionBar.xml" />
+    <AndroidResource Include="Resources\drawable\applogo.png" />
+    <AndroidResource Include="Resources\layout\MijnVakken.axml" />
+    <AndroidResource Include="Resources\layout\ListViewRowVakken.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <Import Project="..\packages\SQLitePCL.raw_basic.0.8.0\build\MonoAndroid\SQLitePCL.raw_basic.targets" Condition="Exists('..\packages\SQLitePCL.raw_basic.0.8.0\build\MonoAndroid\SQLitePCL.raw_basic.targets')" />

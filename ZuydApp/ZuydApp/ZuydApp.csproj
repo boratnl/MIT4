@@ -35,6 +35,10 @@
     <Compile Include="Login.cs" />
     <Compile Include="DatabaseSQLite\IRepository.cs" />
     <Compile Include="Schoolfeedback.cs" />
+    <Compile Include="VakkenAPI.cs" />
+    <Compile Include="VakkenJSON.cs" />
+    <Compile Include="Models\VakClass.cs" />
+    <Compile Include="Models\MijnVakkenAdapter.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
@@ -82,5 +86,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DatabaseSQLite\" />
+    <Folder Include="Models\" />
   </ItemGroup>
 </Project>

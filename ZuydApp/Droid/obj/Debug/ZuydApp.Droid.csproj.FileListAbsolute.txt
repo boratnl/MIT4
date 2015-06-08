@@ -68,6 +68,9 @@ C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\res\anim\slide
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\res\drawable\progressbarstyle.xml
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\res\layout\schoolfeedback.xml
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\res\values\stylexml.xml
+C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\res\menu\menuactionbar.xml
+C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\res\drawable\applogo.png
+C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\res\layout\mijnvakken.xml
+C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\res\layout\listviewrowvakken.xml
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\R.cs.flag
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\uploadflags.txt
-C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\res\menu\menuactionbar.xml

@@ -54,6 +54,8 @@ namespace ZuydApp.Droid
 						_txtError.Text = registerError;
 					} else {
 						_txtError.Text = "succesvol";
+						//Toast.MakeText (this,"Het account is geregistreerd activeer het via de mail",ToastLength.Long).Show();
+
 						/*var activityMenuScreen = new Intent (this, typeof(MenuScreen));
 					activityMenuScreen.PutExtra ("LoginData", new string[]{ register.propUsername, register.propPassword });
 					StartActivity (activityMenuScreen);*/
