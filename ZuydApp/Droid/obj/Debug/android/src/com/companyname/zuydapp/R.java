@@ -1520,7 +1520,7 @@ containing a value of this type.
         public static final int PgbLogin=0x7f080058;
         public static final int TxtEmailLogin=0x7f080053;
         public static final int TxtPasswordLogin=0x7f080054;
-        public static final int abLogOut=0x7f080068;
+        public static final int abLogOut=0x7f080072;
         public static final int action_bar=0x7f080040;
         public static final int action_bar_activity_content=0x7f080000;
         public static final int action_bar_container=0x7f08003f;
@@ -1538,11 +1538,13 @@ containing a value of this type.
         public static final int alertTitle=0x7f080030;
         public static final int always=0x7f080016;
         public static final int beginning=0x7f080013;
-        public static final int btnCreateRegister=0x7f080064;
+        public static final int btnCreateRegister=0x7f080068;
         public static final int btnMijnVakken=0x7f08005a;
+        public static final int btnOpslaanRatingDialog=0x7f080062;
         public static final int btnSchoolFeedbackMenu=0x7f08005d;
-        public static final int btnVerzendenSchoolfeedback=0x7f080066;
-        public static final int btn_OpslaanMijnVakken=0x7f08005e;
+        public static final int btnVerzendenSchoolfeedback=0x7f080069;
+        public static final int btn_OpslaanUitgebreid=0x7f080071;
+        public static final int btn_VakBeoordelenRatingDialog=0x7f080061;
         public static final int button2=0x7f08005b;
         public static final int button3=0x7f08005c;
         public static final int buttonPanel=0x7f080036;
@@ -1557,7 +1559,13 @@ containing a value of this type.
         public static final int disableHome=0x7f08000c;
         public static final int dropdown=0x7f08001c;
         public static final int edit_query=0x7f080042;
-        public static final int edtMessageSchoolfeedback=0x7f080067;
+        public static final int edtDocentUitgebreid=0x7f08006c;
+        public static final int edtLokalenUitgebreid=0x7f08006d;
+        public static final int edtMessageSchoolfeedback=0x7f08006b;
+        public static final int edtNiveauUitgebreid=0x7f080070;
+        public static final int edtOnderwerpSchoolfeedback=0x7f08006a;
+        public static final int edtTijdUitgebreid=0x7f08006f;
+        public static final int edtVoorkennisUitgebreid=0x7f08006e;
         public static final int end=0x7f080014;
         public static final int expand_activities_button=0x7f080027;
         public static final int expanded_menu=0x7f080037;
@@ -1569,7 +1577,7 @@ containing a value of this type.
         public static final int imageView1=0x7f080052;
         public static final int listMode=0x7f080009;
         public static final int list_item=0x7f08002a;
-        public static final int lv_Vakken=0x7f08005f;
+        public static final int lv_Vakken=0x7f08005e;
         public static final int middle=0x7f080015;
         public static final int multiply=0x7f08001e;
         public static final int never=0x7f080019;
@@ -1580,6 +1588,7 @@ containing a value of this type.
         public static final int progress_horizontal=0x7f080006;
         public static final int radio=0x7f08003a;
         public static final int ratingBar1=0x7f080051;
+        public static final int rb_RatingDialog=0x7f080060;
         public static final int screen=0x7f08001f;
         public static final int scrollView=0x7f080032;
         public static final int search_badge=0x7f080044;
@@ -1609,12 +1618,13 @@ containing a value of this type.
         public static final int topPanel=0x7f08002e;
         public static final int tv_DocentMijnVakken=0x7f080050;
         public static final int tv_TitelMijnVakken=0x7f08004f;
-        public static final int txtEmailRegister=0x7f080061;
-        public static final int txtErrorRegister=0x7f080065;
-        public static final int txtPassword1Register=0x7f080062;
-        public static final int txtPassword2Register=0x7f080063;
+        public static final int tv_TitelRatingDialog=0x7f08005f;
+        public static final int txtEmailRegister=0x7f080065;
+        public static final int txtErrorRegister=0x7f080063;
+        public static final int txtPassword1Register=0x7f080066;
+        public static final int txtPassword2Register=0x7f080067;
         public static final int txtUsernameMenu=0x7f080059;
-        public static final int txtUsernameRegister=0x7f080060;
+        public static final int txtUsernameRegister=0x7f080064;
         public static final int up=0x7f080008;
         public static final int useLogo=0x7f080012;
         public static final int withText=0x7f08001a;
@@ -1655,12 +1665,14 @@ containing a value of this type.
         public static final int login=0x7f03001a;
         public static final int menu=0x7f03001b;
         public static final int mijnvakken=0x7f03001c;
-        public static final int register=0x7f03001d;
-        public static final int schoolfeedback=0x7f03001e;
-        public static final int select_dialog_item_material=0x7f03001f;
-        public static final int select_dialog_multichoice_material=0x7f030020;
-        public static final int select_dialog_singlechoice_material=0x7f030021;
-        public static final int support_simple_spinner_dropdown_item=0x7f030022;
+        public static final int ratingdialog=0x7f03001d;
+        public static final int register=0x7f03001e;
+        public static final int schoolfeedback=0x7f03001f;
+        public static final int select_dialog_item_material=0x7f030020;
+        public static final int select_dialog_multichoice_material=0x7f030021;
+        public static final int select_dialog_singlechoice_material=0x7f030022;
+        public static final int support_simple_spinner_dropdown_item=0x7f030023;
+        public static final int uitgebreid=0x7f030024;
     }
     public static final class menu {
         public static final int menuactionbar=0x7f0c0000;

@@ -9,19 +9,22 @@ namespace ZuydApp
 	{
 		private string _message;
 		private string _username;
+		private string _subject;
 
-		public Schoolfeedback (string username, string message)
+		public Schoolfeedback (string username, string message, string subject)
 		{
-			_message = message;
-			_username = username;
+			this._message = message;
+			this._username = username;
+			this._subject = subject;
 		}
 
 		public async Task<string> SendEmail()
 		{
 			var client = new RestClient ("http://www.sictma.com/zuydapp/sendSchoolFeedback.php");
-			var request = new RestRequest ("?Username={username}&Message={message}", HttpMethod.Get);
+			var request = new RestRequest ("?Username={username}&Message={message}&Subject={subject}", HttpMethod.Get);
 			request.AddUrlSegment ("username",_username);
 			request.AddUrlSegment ("message",_message);
+			request.AddUrlSegment ("subject",_subject);
 			var result = await client.Execute (request);
 			string resultString = System.Text.Encoding.UTF8.GetString (result.RawBytes, 0, result.RawBytes.Length);
 			return resultString;

@@ -49,9 +49,10 @@ namespace ZuydApp.Droid
 			}
 			convertView.FindViewById<TextView> (Resource.Id.tv_TitelMijnVakken).Text = classItem.Naam ;
 			convertView.FindViewById<TextView> (Resource.Id.tv_DocentMijnVakken).Text = classItem.Docent;
+			convertView.FindViewById<RatingBar> (Resource.Id.ratingBar1).Rating = classItem.Id;
+			convertView.FindViewById<RatingBar> (Resource.Id.ratingBar1).IsIndicator = true;
 
 			return convertView;
 		}
 	}
 }
-

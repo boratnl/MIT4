@@ -25,9 +25,9 @@ namespace ZuydApp.Droid
 		{
 			LoginRepository lr = new LoginRepository ();
 			//Login loginFromSQLite = lr.GetAllUsers ();
-			if (lr.ExistDatabase()) {
+			/*if (lr.ExistDatabase()) {
 				StartActivity(typeof(MenuScreen));				
-			}
+			}*/
 			base.OnCreate(bundle);
 			SetContentView(Resource.Layout.Login);
 
@@ -63,6 +63,7 @@ namespace ZuydApp.Droid
 						lr.GetConnection ();
 					}
 				}
+				UserSingleton.Instance.username = login.propUsername;
 				var activityMenuScreen = new Intent (this, typeof(MenuScreen));
 				activityMenuScreen.PutExtra ("LoginData", new string[]{ login.propUsername, login.propPassword });
 				StartActivity (activityMenuScreen);

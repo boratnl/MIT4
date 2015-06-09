@@ -18,6 +18,7 @@ namespace ZuydApp.Droid
 	{
 		private Button _btnVerzenden;
 		private EditText _edtMessage;
+		private EditText _edtSubject;
 		private string[] _arLogin;
 
 		protected override void OnCreate (Bundle bundle)
@@ -32,10 +33,11 @@ namespace ZuydApp.Droid
 			SetContentView(Resource.Layout.Schoolfeedback);
 			_btnVerzenden = FindViewById<Button> (Resource.Id.btnVerzendenSchoolfeedback);
 			_edtMessage = FindViewById<EditText> (Resource.Id.edtMessageSchoolfeedback);
+			_edtSubject = FindViewById<EditText> (Resource.Id.edtOnderwerpSchoolfeedback);
 			_btnVerzenden.SetBackgroundColor(Android.Graphics.Color.White);
 			_btnVerzenden.SetTextColor (Android.Graphics.Color.Black);
 			_btnVerzenden.Click += (object sender, EventArgs e) => {
-				ZuydApp.Schoolfeedback sf = new ZuydApp.Schoolfeedback(_arLogin[0], _edtMessage.Text);
+				ZuydApp.Schoolfeedback sf = new ZuydApp.Schoolfeedback(_arLogin[0], _edtMessage.Text,_edtSubject.Text );
 				sf.SendEmail();
 				var activityMenuScreen = new Intent (this, typeof(MenuScreen));
 				activityMenuScreen.PutExtra ("LoginData", new string[]{ _arLogin[0], _arLogin[1] });

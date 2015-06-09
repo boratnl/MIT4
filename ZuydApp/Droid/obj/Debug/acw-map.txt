@@ -22,6 +22,18 @@ ZuydApp.Droid.VakkenAdapter, ZuydApp.Droid;md5117758b96ce9c2c728bac684a7ffe8d5.V
 ZuydApp.Droid.VakkenAdapter, ZuydApp.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5117758b96ce9c2c728bac684a7ffe8d5.VakkenAdapter
 ZuydApp.Droid.VakkenAdapter;md5117758b96ce9c2c728bac684a7ffe8d5.VakkenAdapter
 zuydapp.droid.VakkenAdapter;md5117758b96ce9c2c728bac684a7ffe8d5.VakkenAdapter
+ZuydApp.Droid.VakFeedback, ZuydApp.Droid;md5117758b96ce9c2c728bac684a7ffe8d5.VakFeedback
+ZuydApp.Droid.VakFeedback, ZuydApp.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5117758b96ce9c2c728bac684a7ffe8d5.VakFeedback
+ZuydApp.Droid.VakFeedback;md5117758b96ce9c2c728bac684a7ffe8d5.VakFeedback
+zuydapp.droid.VakFeedback;md5117758b96ce9c2c728bac684a7ffe8d5.VakFeedback
+ZuydApp.Droid.RatingDialog, ZuydApp.Droid;md5117758b96ce9c2c728bac684a7ffe8d5.RatingDialog
+ZuydApp.Droid.RatingDialog, ZuydApp.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5117758b96ce9c2c728bac684a7ffe8d5.RatingDialog
+ZuydApp.Droid.RatingDialog;md5117758b96ce9c2c728bac684a7ffe8d5.RatingDialog
+zuydapp.droid.RatingDialog;md5117758b96ce9c2c728bac684a7ffe8d5.RatingDialog
+ZuydApp.Droid.UitgebreidActivity, ZuydApp.Droid;md5117758b96ce9c2c728bac684a7ffe8d5.UitgebreidActivity
+ZuydApp.Droid.UitgebreidActivity, ZuydApp.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5117758b96ce9c2c728bac684a7ffe8d5.UitgebreidActivity
+ZuydApp.Droid.UitgebreidActivity;md5117758b96ce9c2c728bac684a7ffe8d5.UitgebreidActivity
+zuydapp.droid.UitgebreidActivity;md5117758b96ce9c2c728bac684a7ffe8d5.UitgebreidActivity
 Android.Support.V4.View.ViewPager/IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.View.ViewPager/IOnPageChangeListenerImplementor, Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.View.ViewPager.IOnPageChangeListenerImplementor;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor

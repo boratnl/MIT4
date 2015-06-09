@@ -4,16 +4,16 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:padding="10dp">
-    <Button
+<!--<Button
         android:layout_width="match_parent"
         android:id="@+id/btn_OpslaanMijnVakken"
         android:layout_height="wrap_content"
         android:text="Save Data"
         android:background="#FF0000"
-        android:layout_alignParentBottom="true" />
+        android:layout_alignParentBottom="true" />-->
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/lv_Vakken"
-        android:layout_above="@id/btn_OpslaanMijnVakken" />
+        android:id="@+id/lv_Vakken" />
+<!--android:layout_above="@id/btn_OpslaanMijnVakken"-->
 </RelativeLayout>

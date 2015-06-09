@@ -28,6 +28,7 @@ namespace ZuydApp.Droid
 		
 		protected override void OnCreate(Bundle bundle)
 		{
+			string username = UserSingleton.Instance.username;
 		  	if(Intent.GetStringArrayExtra("LoginData") != null)
 				_arLogin = Intent.GetStringArrayExtra ("LoginData");
 			else
@@ -41,7 +42,7 @@ namespace ZuydApp.Droid
 			_btnMijnSchoolvakken = (Button)FindViewById (Resource.Id.btnMijnVakken);
 			_tvUsername = (TextView)FindViewById (Resource.Id.txtUsernameMenu);
 			//_tvUsername.Text = _arLogin[0];
-			_tvUsername.Text = "ddd";
+			_tvUsername.Text = username;
 			_btnSchoolFeedback.Click += (object sender, EventArgs e) => {
 				var activityMijnVakken = new Intent (this, typeof(Schoolfeedback));
 				activityMijnVakken.PutExtra ("LoginData", new string[]{ _arLogin[0], _arLogin[1] });

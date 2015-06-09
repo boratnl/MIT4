@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/black"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="300dp"
+    android:minHeight="300dp"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/tv_TitelRatingDialog"
+        android:text="Titel"
+        android:textColor="@android:color/white" />
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_TitelRatingDialog"
+        android:id="@+id/rb_RatingDialog"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:layout_centerInParent="true" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rb_RatingDialog"
+        android:layout_marginTop="10dp">
+        <Button
+            android:text="Uitgebreid Beoordelen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_VakBeoordelenRatingDialog"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="0dp" />
+        <Button
+            android:text="Opslaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_VakBeoordelenRatingDialog"
+            android:id="@+id/btnOpslaanRatingDialog"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnOpslaanRatingDialog"
+            android:id="@+id/txtErrorRegister"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:textColor="#ff000000" />
+    </RelativeLayout>
+</RelativeLayout>
