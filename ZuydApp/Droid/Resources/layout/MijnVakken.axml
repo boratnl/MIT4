@@ -15,5 +15,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/lv_Vakken" />
-<!--android:layout_above="@id/btn_OpslaanMijnVakken"-->
+<!-- android:layout_above="@id/btn_OpslaanMijnVakken" -->
+    <TextView
+        android:text="Small Textsadf dddd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lv_Vakken"
+        android:id="@+id/tv_footerVakken"
+        android:layout_alignParentBottom="true" />
 </RelativeLayout>

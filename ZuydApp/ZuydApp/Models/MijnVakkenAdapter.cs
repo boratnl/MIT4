@@ -14,6 +14,10 @@ namespace ZuydApp
 			return classes;
 		}
 
+		public void addClasses(string Titel, string Docent, int ster)
+		{
+			classes.Add(new VakClass(Titel, Docent, ster));
+		}
 	}
 }
 

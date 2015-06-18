@@ -24,7 +24,6 @@ C:\Users\Gebruiker\Documents\Projects\ZuydApp\Droid\obj\Debug\res\anim\slide_up.
 C:\Users\Gebruiker\Documents\Projects\ZuydApp\Droid\obj\Debug\res\drawable\progressbarstyle.xml
 C:\Users\Gebruiker\Documents\Projects\ZuydApp\Droid\obj\Debug\R.cs.flag
 C:\Users\Gebruiker\Documents\Projects\ZuydApp\Droid\obj\Debug\uploadflags.txt
-C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\ZuydApp.Droid.csprojResolveAssemblyReference.cache
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\bin\Debug\ZuydApp.Droid.dll
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\bin\Debug\ZuydApp.Droid.pdb
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\bin\Debug\ZuydApp.Droid.dll.mdb
@@ -52,6 +51,7 @@ C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\bin\Debug\Newtonsoft.Jso
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\bin\Debug\System.Net.Http.Primitives.xml
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\bin\Debug\Microsoft.Threading.Tasks.xml
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\ZuydApp.Droid.csprojResolveAssemblyReference.cache
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\ZuydApp.Droid.dll
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\ZuydApp.Droid.pdb
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\android\bin\com.companyname.zuydapp.apk
@@ -73,6 +73,7 @@ C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\res\drawable\a
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\res\layout\mijnvakken.xml
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\res\layout\listviewrowvakken.xml
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\res\layout\ratingdialog.xml
+C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\res\layout\uitgebreid.xml
+C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\res\drawable\zuydtranspararant.png
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\R.cs.flag
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\uploadflags.txt
-C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\res\layout\uitgebreid.xml

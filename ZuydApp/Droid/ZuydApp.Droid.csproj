@@ -116,6 +116,7 @@
     <AndroidResource Include="Resources\layout\ListViewRowVakken.xml" />
     <AndroidResource Include="Resources\layout\RatingDialog.axml" />
     <AndroidResource Include="Resources\layout\Uitgebreid.axml" />
+    <AndroidResource Include="Resources\drawable\ZuydTranspararant.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <Import Project="..\packages\SQLitePCL.raw_basic.0.8.0\build\MonoAndroid\SQLitePCL.raw_basic.targets" Condition="Exists('..\packages\SQLitePCL.raw_basic.0.8.0\build\MonoAndroid\SQLitePCL.raw_basic.targets')" />

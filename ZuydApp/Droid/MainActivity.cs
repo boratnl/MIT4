@@ -11,7 +11,7 @@ using System.Threading;
 
 namespace ZuydApp.Droid
 {
-	[Activity (Label = "ZuydApp", Icon = "@drawable/applogo", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+	[Activity (Label = "StudentEnquête", Icon = "@drawable/applogo", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
 	public class MainActivity : Activity
 	{
 		private EditText _etEmail;
@@ -25,15 +25,15 @@ namespace ZuydApp.Droid
 		{
 			LoginRepository lr = new LoginRepository ();
 			//Login loginFromSQLite = lr.GetAllUsers ();
-			/*if (lr.ExistDatabase()) {
+			if (!lr.ExistDatabase()) {
 				StartActivity(typeof(MenuScreen));				
-			}*/
+			}
 			base.OnCreate(bundle);
 			SetContentView(Resource.Layout.Login);
 
 			_btnLogIn = FindViewById<Button>(Resource.Id.BtnLoginLogin);
 			_btnRegister = FindViewById<Button>(Resource.Id.BtnRegisterLogin);
-			_progressBar = FindViewById<ProgressBar>(Resource.Id.PgbLogin);
+			//_progressBar = FindViewById<ProgressBar>(Resource.Id.PgbLogin);
 			_etEmail = FindViewById<EditText> (Resource.Id.TxtEmailLogin);
 			_etPassword = FindViewById<EditText> (Resource.Id.TxtPasswordLogin);
 			_cbRemember = FindViewById<CheckBox> (Resource.Id.CbxRemberLogin);

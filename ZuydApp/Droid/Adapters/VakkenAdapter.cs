@@ -6,13 +6,12 @@ using Android.Views;
 
 namespace ZuydApp.Droid
 {
-	public class VakkenAdapter : BaseAdapter<VakClass>
+	public class VakkenAdapter : BaseAdapter<VakJSON>
 	{
 		LayoutInflater inflater;
-		List<VakClass> classes;
+		List<VakJSON> classes;
 
-
-		public VakkenAdapter (Context context, List<VakClass> vakken)
+		public VakkenAdapter (Context context, List<VakJSON> vakken)
 		{
 			this.inflater = LayoutInflater.From (context);
 			this.classes = vakken;			
@@ -29,16 +28,10 @@ namespace ZuydApp.Droid
 			return position;
 		}
 
-		public override VakClass this[int index] {
+		public override VakJSON this[int index] {
 			get {
 				return classes [index];
 			}
-		}
-
-		public void addItems(VakClass singleVak)
-		{
-			classes.Add (singleVak);
-			NotifyDataSetChanged ();
 		}
 
 		public override View GetView (int position, View convertView, ViewGroup parent)
@@ -47,9 +40,9 @@ namespace ZuydApp.Droid
 			if (convertView == null) {
 				convertView = inflater.Inflate (Resource.Layout.ListViewRowVakken, null);
 			}
-			convertView.FindViewById<TextView> (Resource.Id.tv_TitelMijnVakken).Text = classItem.Naam ;
+			convertView.FindViewById<TextView> (Resource.Id.tv_TitelMijnVakken).Text = classItem.Titel ;
 			convertView.FindViewById<TextView> (Resource.Id.tv_DocentMijnVakken).Text = classItem.Docent;
-			convertView.FindViewById<RatingBar> (Resource.Id.ratingBar1).Rating = classItem.Id;
+			convertView.FindViewById<RatingBar> (Resource.Id.ratingBar1).Rating = classItem.Rating;
 			convertView.FindViewById<RatingBar> (Resource.Id.ratingBar1).IsIndicator = true;
 
 			return convertView;

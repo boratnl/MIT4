@@ -34,6 +34,6 @@ C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\bin\Debug\System.Net.H
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\bin\Debug\System.Net.Http.Primitives.xml
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\obj\Debug\ZuydApp.csproj.App.config
+C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\obj\Debug\ZuydApp.csprojResolveAssemblyReference.cache
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\obj\Debug\ZuydApp.dll
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\obj\Debug\ZuydApp.pdb
-C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\obj\Debug\ZuydApp.csprojResolveAssemblyReference.cache

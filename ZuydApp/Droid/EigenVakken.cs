@@ -12,6 +12,7 @@ using Android.Views;
 using Android.Widget;
 using ZuydApp;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace ZuydApp.Droid
 {
@@ -19,10 +20,12 @@ namespace ZuydApp.Droid
 	public class EigenVakken : Activity
 	{
 		VakkenAdapter adapter;
-		List<VakClass> _mijnvakkenadapter;
+		List<VakJSON> listVakken;
 		private ListView _lvVakken;
+		private TextView _tvFooter;
 	
 		private string[] _arLogin;
+		public Button _btnLaad;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -35,8 +38,19 @@ namespace ZuydApp.Droid
 
 			base.OnCreate (bundle);
 
+			callAPI ();
+			//listVakken.Result [0].Afkorting;
+
+
 			SetContentView(Resource.Layout.MijnVakken);
 			_lvVakken = FindViewById<ListView>(Resource.Id.lv_Vakken);
+			_tvFooter = FindViewById<TextView> (Resource.Id.tv_footerVakken);
+			//_btnLaad = FindViewById<Button> (Resource.Id.btn_OpslaanMijnVakken);
+			/*_btnLaad.Click += async (object sender, EventArgs e) => {
+				List<VakJSON> listVakken = await VakkenAPI.Fetch ();
+				VakkenAdapter va = new VakkenAdapter(this, listVakken);
+				_lvVakken.Adapter = va;
+			};*/
 			_lvVakken.ItemClick += (object sender, AdapterView.ItemClickEventArgs e) => {
 				var selectedVak = adapter.GetItem(e.Position);
 				/*Intent showVak = new Intent(this, typeof(VakFeedback));
@@ -51,15 +65,21 @@ namespace ZuydApp.Droid
 			};
 			// Create your application here
 
-			_mijnvakkenadapter = MijnVakkenAdapter.getMijnVakken ();
-			adapter = new VakkenAdapter (this, _mijnvakkenadapter);
+			//_mijnvakkenadapter = MijnVakkenAdapter.getMijnVakken ();
+			//adapter = new VakkenAdapter (this, _mijnvakkenadapter);
+
+		}
+
+		async void callAPI() {
+			listVakken = await VakkenAPI.Fetch ();
+			adapter = new VakkenAdapter(this, listVakken);
 			_lvVakken.Adapter = adapter;
 		}
 
 		void NewActivity (int ePosition)
 		{
 			FragmentTransaction transaction = FragmentManager.BeginTransaction();
-			RatingDialog signUpDiaglog = new RatingDialog(ePosition);
+			RatingDialog signUpDiaglog = new RatingDialog(ePosition, listVakken);
 
 			signUpDiaglog.context = this;
 
@@ -81,4 +101,3 @@ namespace ZuydApp.Droid
 		}
 	}
 }
-
