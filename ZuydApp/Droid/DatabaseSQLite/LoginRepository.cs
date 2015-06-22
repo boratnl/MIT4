@@ -70,7 +70,7 @@ namespace ZuydApp.Droid
 			connection.Close ();
 		}
 
-		public Login GetAllUsers()
+		public void GetUser()
 		{
 			var sqlQuery = "SELECT Username, Password FROM Login;";
 
@@ -80,12 +80,42 @@ namespace ZuydApp.Droid
 					cmd.CommandText = sqlQuery;
 					using(var reader = cmd.ExecuteReader()){
 						if (reader.Read ()) {
-							return new Login (reader.GetString (0), reader.GetString (1));
+							string x = reader.GetString (0);
+							string x2 = reader.GetString (1);
+							UserSingleton.Instance.username = reader.GetString (0);
 						} else {
-							return null;
+							UserSingleton.Instance.username = "";
 						}
 					}
 				}
+			}
+		}
+
+		public void InsertUser()
+		{
+			var dbPath = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.Personal), db_file);
+			bool exists = File.Exists (dbPath);
+			var conn = new SqliteConnection ("Data Source="+dbPath);
+			if (exists) {
+
+				conn.Open ();
+
+				try {
+
+					var sql = "UPDATE Login SET Username=@LoginNaam, Password=@LoginPassword WHERE Username='';";
+					//UPDATE Login SET Username='', Password='', Modified='' WHERE Username=@Username;
+					using(var cmd = conn.CreateCommand()){
+						cmd.CommandText = sql;
+						cmd.Parameters.AddWithValue ("@LoginNaam", _login.propUsername);
+						cmd.Parameters.AddWithValue ("@LoginPassword", _login.propPassword);
+						cmd.ExecuteNonQuery ();
+					}
+
+				} catch (Exception ex) {
+					Console.WriteLine (ex.Message);
+				}
+
+				conn.Close ();
 			}
 		}
 	}

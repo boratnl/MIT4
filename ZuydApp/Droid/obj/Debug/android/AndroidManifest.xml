@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.zuydapp">
-  <uses-sdk android:minSdkVersion="18" android:targetSdkVersion="21" />
+  <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="21" />
   <application android:label="ZuydApp" android:name="mono.android.app.Application" android:debuggable="true">
     <activity android:configChanges="orientation|screenSize" android:icon="@drawable/applogo" android:label="StudentEnquête" android:name="md5117758b96ce9c2c728bac684a7ffe8d5.MainActivity">
       <intent-filter>

@@ -64,32 +64,18 @@ namespace ZuydApp
 		{
 			
 		}
-
-		public bool CheckIfDataIsOffline ()
-		{
 			
-			return false;
-		}
 			
 		public async Task<string> Fetch()
 		{
-			string LoginCheck = "false";
 			var client = new RestClient ("http://www.sictma.com/zuydapp/getLogin.php");
 			var request = new RestRequest ("?Username={username}&Password={password}", HttpMethod.Get);
 			request.AddUrlSegment ("username",propUsername);
 			request.AddUrlSegment ("password",propPassword);
 			var result = await client.Execute (request);
 			string resultString = System.Text.Encoding.UTF8.GetString (result.RawBytes, 0, result.RawBytes.Length);
-			if (resultString == "true") {
-				LoginCheck = "true";
-			}
-			else if(resultString == "Account niet geactiveerd")
-			{
-				LoginCheck = "Account niet geactiveerd";
-			}
-			//var loginData = JsonConvert.DeserializeObject<Login> (resultString);
 
-			return LoginCheck;
+			return resultString;
 		}
 	}
 }

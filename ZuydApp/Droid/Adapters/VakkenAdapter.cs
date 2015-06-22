@@ -42,6 +42,9 @@ namespace ZuydApp.Droid
 			}
 			convertView.FindViewById<TextView> (Resource.Id.tv_TitelMijnVakken).Text = classItem.Titel ;
 			convertView.FindViewById<TextView> (Resource.Id.tv_DocentMijnVakken).Text = classItem.Docent;
+			if (classItem.Rating == -1) {
+				classItem.Rating = 0;
+			}
 			convertView.FindViewById<RatingBar> (Resource.Id.ratingBar1).Rating = classItem.Rating;
 			convertView.FindViewById<RatingBar> (Resource.Id.ratingBar1).IsIndicator = true;
 

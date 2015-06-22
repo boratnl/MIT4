@@ -56,7 +56,7 @@ namespace ZuydApp.Droid
 			base.OnOptionsItemSelected (item);
 			switch(item.ItemId){
 			case Resource.Id.abLogOut:
-				new LogOut().DeleteSqlDatabase(this);
+				new LogOut().LogoutDatabase();
 				StartActivity (typeof(MainActivity));
 				break;
 			}

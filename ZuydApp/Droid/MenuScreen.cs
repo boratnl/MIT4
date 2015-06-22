@@ -28,13 +28,12 @@ namespace ZuydApp.Droid
 		
 		protected override void OnCreate(Bundle bundle)
 		{
-			string username = UserSingleton.Instance.username;
 		  	if(Intent.GetStringArrayExtra("LoginData") != null)
 				_arLogin = Intent.GetStringArrayExtra ("LoginData");
 			else
 				_arLogin = new string[]{"MaikelUsername","MaikelPassword"};
 			base.OnCreate(bundle);
-
+			string x = UserSingleton.Instance.username;
 			SetContentView(Resource.Layout.Menu);
 			//mToolbar = FindViewById<SupportToolbar> (Resource.Id.toolbar);
 			//mToolbar.InflateMenu (Resource.Menu.toolbar_menu);
@@ -42,7 +41,7 @@ namespace ZuydApp.Droid
 			_btnMijnSchoolvakken = (Button)FindViewById (Resource.Id.btnMijnVakken);
 			_tvUsername = (TextView)FindViewById (Resource.Id.txtUsernameMenu);
 			//_tvUsername.Text = _arLogin[0];
-			_tvUsername.Text = username;
+			_tvUsername.Text = UserSingleton.Instance.username;
 			_btnSchoolFeedback.Click += (object sender, EventArgs e) => {
 				var activityMijnVakken = new Intent (this, typeof(Schoolfeedback));
 				activityMijnVakken.PutExtra ("LoginData", new string[]{ _arLogin[0], _arLogin[1] });
@@ -67,7 +66,7 @@ namespace ZuydApp.Droid
 			base.OnOptionsItemSelected (item);
 			switch(item.ItemId){
 			case Resource.Id.abLogOut:
-				new LogOut().DeleteSqlDatabase(this);
+				new LogOut().LogoutDatabase();
 				StartActivity (typeof(MainActivity));
 				break;
 			}
