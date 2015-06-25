@@ -79,9 +79,9 @@
     <Compile Include="DatabaseSQLite\LogOut.cs" />
     <Compile Include="EigenVakken.cs" />
     <Compile Include="Adapters\VakkenAdapter.cs" />
-    <Compile Include="VakFeedback.cs" />
     <Compile Include="RatingDialog.cs" />
     <Compile Include="UitgebreidActivity.cs" />
+    <Compile Include="MijnChatroomsActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -117,6 +117,7 @@
     <AndroidResource Include="Resources\layout\RatingDialog.axml" />
     <AndroidResource Include="Resources\layout\Uitgebreid.axml" />
     <AndroidResource Include="Resources\drawable\ZuydTranspararant.png" />
+    <AndroidResource Include="Resources\layout\Chatrooms.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <Import Project="..\packages\SQLitePCL.raw_basic.0.8.0\build\MonoAndroid\SQLitePCL.raw_basic.targets" Condition="Exists('..\packages\SQLitePCL.raw_basic.0.8.0\build\MonoAndroid\SQLitePCL.raw_basic.targets')" />

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp"
+    android:background="#C3D8DF"
+    android:id="@+id/LayoutChatrooms">
+<!--<Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:layout_alignParentTop="true" />-->
+    <ImageView
+        android:src="@drawable/zuyd_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="130.8dp"
+        android:id="@+id/imageView2" />
+    <TextView
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtUsernameChatrooms"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal" />
+    <Button
+        android:text="PIT4 Weet ik veel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:id="@+id/btnVak3MijnChatroom" />
+    <Button
+        android:text="MIT4 Cross App Development"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:id="@+id/btnVak2MijnChatroom" />
+    <Button
+        android:text="MIT3 Distributed Systems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:id="@+id/btnVak1MijnChatroom" />
+</LinearLayout>

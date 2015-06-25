@@ -48,7 +48,7 @@
                 android:textColorHighlight="@android:color/black"
                 android:textColorLink="@android:color/black" />
             <CheckBox
-                android:text="CheckBox"
+                android:text="Onthouden"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/CbxRemberLogin"

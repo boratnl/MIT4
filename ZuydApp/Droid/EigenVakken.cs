@@ -16,7 +16,7 @@ using System.Threading.Tasks;
 
 namespace ZuydApp.Droid
 {
-	[Activity (Label = "EigenVakken")]			
+	[Activity (Label = "EigenVakken", ScreenOrientation=Android.Content.PM.ScreenOrientation.Portrait)]			
 	public class EigenVakken : Activity
 	{
 		VakkenAdapter adapter;
@@ -56,7 +56,6 @@ namespace ZuydApp.Droid
 				/*Intent showVak = new Intent(this, typeof(VakFeedback));
 				StartActivity(showVak);*/
 				//Get our item from the list adapter
-
 
 
 				NewActivity(e.Position);

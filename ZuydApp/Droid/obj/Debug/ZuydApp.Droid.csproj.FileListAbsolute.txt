@@ -75,5 +75,6 @@ C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\res\layout\lis
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\res\layout\ratingdialog.xml
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\res\layout\uitgebreid.xml
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\res\drawable\zuydtranspararant.png
+C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\res\layout\chatrooms.xml
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\R.cs.flag
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\obj\Debug\uploadflags.txt

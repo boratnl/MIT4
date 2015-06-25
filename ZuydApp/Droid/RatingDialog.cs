@@ -44,8 +44,9 @@ namespace ZuydApp.Droid
 
 			_btOpslaan.Click += (object sender, EventArgs e) => {
 				RatingAPI();
-				Intent intent = new Intent(context, typeof(EigenVakken));
-				StartActivity(intent);
+				VakSingleton.Instance.vakid = _alleVakken[_selecteditem].Id;
+				var activityUitgebreidScreen = new Intent (context, typeof(EigenVakken));
+				StartActivity(activityUitgebreidScreen);
 			};
 			_btUitgebreid.Click += (object sender, EventArgs e) => {
 				Intent intent = new Intent(context, typeof(UitgebreidActivity));

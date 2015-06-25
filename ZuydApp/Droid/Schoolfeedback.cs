@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace ZuydApp.Droid
 {
-	[Activity (Label = "Schoolfeedback")]			
+	[Activity (Label = "Schoolfeedback", ScreenOrientation=Android.Content.PM.ScreenOrientation.Portrait)]			
 	public class Schoolfeedback : Activity
 	{
 		private Button _btnVerzenden;

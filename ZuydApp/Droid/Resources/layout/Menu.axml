@@ -32,10 +32,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnMijnVakken" />
     <Button
-        android:text="Button"
+        android:text="Mijn Chatrooms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button2" />
+        android:id="@+id/btnMijnChatrooms" />
     <Button
         android:text="Button"
         android:layout_width="match_parent"

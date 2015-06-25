@@ -11,7 +11,7 @@ using System.Threading;
 
 namespace ZuydApp.Droid
 {
-	[Activity (Label = "StudentEnquête", Icon = "@drawable/applogo", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+	[Activity (Label = "StudentEnquête", Icon = "@drawable/applogo", ScreenOrientation=ScreenOrientation.Portrait, MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
 	public class MainActivity : Activity
 	{
 		private EditText _etEmail;
@@ -94,7 +94,7 @@ namespace ZuydApp.Droid
 
 		void SignUpDiaglog__onSignUpComplete (object sender, ZuydApp.Register e)
 		{
-			_progressBar.Visibility = ViewStates.Visible;
+			//_progressBar.Visibility = ViewStates.Visible;
 			Thread thread = new Thread(ActLikeARequestSignUp);
 			thread.Start();
 		}
@@ -102,7 +102,7 @@ namespace ZuydApp.Droid
 		private void ActLikeARequestSignUp()
 		{
 			Thread.Sleep(3000);
-			RunOnUiThread(() => { _progressBar.Visibility = ViewStates.Invisible; });
+			//RunOnUiThread(() => { _progressBar.Visibility = ViewStates.Invisible; });
 			StartActivity(typeof(MainActivity));
 		}
 	}

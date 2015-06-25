@@ -4,6 +4,11 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:padding="10dp">
+    <TextView
+        android:text="Docent:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_DocentUitgebreid" />
     <EditText
         android:inputType="text"
         android:layout_width="match_parent"
@@ -18,7 +23,14 @@
         android:padding="10dp"
         android:layout_marginTop="10dp"
         android:layout_gravity="top"
-        android:gravity="top" />
+        android:gravity="top"
+        android:layout_below="@id/tv_DocentUitgebreid" />
+    <TextView
+        android:text="Lokalen:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtLokalenUitgebreid"
+        android:id="@+id/tv_LokalenUitgebreid" />
     <EditText
         android:inputType="text"
         android:layout_width="match_parent"
@@ -32,7 +44,7 @@
         android:textColorLink="@android:color/black"
         android:padding="10dp"
         android:layout_marginTop="5dp"
-        android:layout_below="@id/edtDocentUitgebreid" />
+        android:layout_below="@id/tv_LokalenUitgebreid" />
     <EditText
         android:inputType="text"
         android:layout_width="match_parent"
