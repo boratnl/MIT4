@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace ZuydApp.Droid
 {
-	[Activity (Label = "RatingDialog")]			
+	[Activity (Label = "RatingDialog", ScreenOrientation=Android.Content.PM.ScreenOrientation.Portrait)]			
 	public class RatingDialog : DialogFragment
 	{
 		public int _selecteditem;
@@ -42,8 +42,15 @@ namespace ZuydApp.Droid
 			_btUitgebreid = view.FindViewById<Button> (Resource.Id.btn_VakBeoordelenRatingDialog);
 			_btOpslaan = view.FindViewById<Button> (Resource.Id.btnOpslaanRatingDialog);
 
-			_btOpslaan.Click += (object sender, EventArgs e) => {
-				RatingAPI();
+			//Boolean x= Beoordeling.RatingBeoordelen(1, 3).Result;
+
+			VakSingleton.Instance.vakid = _alleVakken[_selecteditem].Id;
+			_btOpslaan.Click += async (object sender, EventArgs e) => {
+				//await RatingAPI();
+				Boolean y = await Beoordeling.RatingBeoordelen(_alleVakken[_selecteditem].Id,(int)_rbRating.Rating);
+				if(!y) {
+					var x = "";
+				}
 				VakSingleton.Instance.vakid = _alleVakken[_selecteditem].Id;
 				var activityUitgebreidScreen = new Intent (context, typeof(EigenVakken));
 				StartActivity(activityUitgebreidScreen);
@@ -59,10 +66,10 @@ namespace ZuydApp.Droid
 			return view;
 		}
 
-		async void RatingAPI()
+		/*async void RatingAPI()
 		{
 			bool x = await Beoordeling.RatingBeoordelen(_alleVakken[_selecteditem].Id,(int)_rbRating.Rating);
-		}
+		}*/
 
 		public override void OnActivityCreated(Bundle savedInstanceState)
 		{

@@ -19,6 +19,7 @@
         android:layout_height="130.8dp"
         android:id="@+id/imageView1" />
     <TextView
+        android:layout_marginTop="15dp"
         android:text="Medium Text"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="wrap_content"
@@ -27,23 +28,29 @@
         android:textColor="@android:color/black"
         android:layout_gravity="center_horizontal" />
     <Button
+        android:layout_marginTop="20dp"
         android:text="Mijn Vakken"
         android:layout_width="match_parent"
+        android:background="#ff6d5f5f"
         android:layout_height="wrap_content"
         android:id="@+id/btnMijnVakken" />
     <Button
+        android:layout_marginTop="20dp"
         android:text="Mijn Chatrooms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#ff6d5f5f"
         android:id="@+id/btnMijnChatrooms" />
-    <Button
+<!--<Button
         android:text="Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button3" />
+        android:id="@+id/button3" />-->
     <Button
+        android:layout_marginTop="20dp"
         android:text="Schoolfeedback"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#ff6d5f5f"
         android:id="@+id/btnSchoolFeedbackMenu" />
 </LinearLayout>

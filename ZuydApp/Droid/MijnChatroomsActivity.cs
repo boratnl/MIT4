@@ -51,6 +51,24 @@ namespace ZuydApp.Droid
 
 			// Create your application here
 		}
+
+		public override bool OnCreateOptionsMenu (IMenu menu)
+		{
+			MenuInflater.Inflate (Resource.Menu.menuActionBar, menu);
+			return base.OnCreateOptionsMenu (menu);
+		}
+
+		public override bool OnOptionsItemSelected(IMenuItem item)
+		{
+			base.OnOptionsItemSelected (item);
+			switch(item.ItemId){
+			case Resource.Id.abLogOut:
+				new LogOut().LogoutDatabase();
+				StartActivity (typeof(MainActivity));
+				break;
+			}
+			return true;
+		}
 	}
 }
 

@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace ZuydApp.Droid
 {
-	[Activity (Label = "Register")]			
+	[Activity (Label = "Register", ScreenOrientation=Android.Content.PM.ScreenOrientation.Portrait)]			
 	public class RegisterDialog : DialogFragment
 	{
 		private TextView _txtError;

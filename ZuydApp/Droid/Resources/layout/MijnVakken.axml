@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:background="#C3D8DF">
 <!--<Button
         android:layout_width="match_parent"
         android:id="@+id/btn_OpslaanMijnVakken"
@@ -13,14 +14,22 @@
         android:layout_alignParentBottom="true" />-->
     <ListView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/lv_Vakken" />
 <!-- android:layout_above="@id/btn_OpslaanMijnVakken" -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
     <TextView
-        android:text="Small Textsadf dddd"
+        android:inputType="textMultiLine"
+        android:maxLines="5"
+        android:text="5 sterren = Heel goed"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/lv_Vakken"
         android:id="@+id/tv_footerVakken"
-        android:layout_alignParentBottom="true" />
-</RelativeLayout>
+        android:layout_alignParentBottom="true"
+        android:textColor="@android:color/black"
+        android:scrollHorizontally="false"
+        android:scrollbars="vertical" />
+</LinearLayout>

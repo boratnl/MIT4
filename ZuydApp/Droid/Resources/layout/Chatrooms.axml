@@ -28,21 +28,24 @@
         android:textColor="@android:color/black"
         android:layout_gravity="center_horizontal" />
     <Button
+        android:layout_marginTop="15dp"
         android:text="PIT4 Weet ik veel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="left"
+        android:background="#ff6d5f5f"
         android:id="@+id/btnVak3MijnChatroom" />
     <Button
+        android:layout_marginTop="20dp"
         android:text="MIT4 Cross App Development"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="left"
+        android:background="#ff6d5f5f"
         android:id="@+id/btnVak2MijnChatroom" />
     <Button
+        android:layout_marginTop="20dp"
         android:text="MIT3 Distributed Systems"
         android:layout_width="match_parent"
+        android:background="#ff6d5f5f"
         android:layout_height="wrap_content"
-        android:gravity="left"
         android:id="@+id/btnVak1MijnChatroom" />
 </LinearLayout>

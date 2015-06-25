@@ -3,14 +3,17 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:background="#C3D8DF">
     <TextView
         android:text="Docent:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_DocentUitgebreid" />
+        android:id="@+id/tv_DocentUitgebreid"
+        android:textColor="@android:color/black" />
     <EditText
-        android:inputType="text"
+        android:inputType="textMultiLine"
+        android:lines="2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/edtDocentUitgebreid"
@@ -26,13 +29,16 @@
         android:gravity="top"
         android:layout_below="@id/tv_DocentUitgebreid" />
     <TextView
+        android:layout_marginTop="8dp"
         android:text="Lokalen:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edtLokalenUitgebreid"
-        android:id="@+id/tv_LokalenUitgebreid" />
+        android:layout_below="@id/edtDocentUitgebreid"
+        android:id="@+id/tv_LokalenUitgebreid"
+        android:textColor="@android:color/black" />
     <EditText
-        android:inputType="text"
+        android:inputType="textMultiLine"
+        android:lines="2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/edtLokalenUitgebreid"
@@ -45,8 +51,17 @@
         android:padding="10dp"
         android:layout_marginTop="5dp"
         android:layout_below="@id/tv_LokalenUitgebreid" />
+    <TextView
+        android:layout_marginTop="8dp"
+        android:text="Voorkennis:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtLokalenUitgebreid"
+        android:id="@+id/tv_VoorkennisUitgebreid"
+        android:textColor="@android:color/black" />
     <EditText
-        android:inputType="text"
+        android:inputType="textMultiLine"
+        android:lines="2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/edtVoorkennisUitgebreid"
@@ -58,9 +73,18 @@
         android:textColorLink="@android:color/black"
         android:padding="10dp"
         android:layout_marginTop="5dp"
-        android:layout_below="@id/edtLokalenUitgebreid" />
+        android:layout_below="@id/tv_VoorkennisUitgebreid" />
+    <TextView
+        android:layout_marginTop="8dp"
+        android:text="Totale tijd:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtVoorkennisUitgebreid"
+        android:id="@+id/tv_TotaleTijdUitgebreid"
+        android:textColor="@android:color/black" />
     <EditText
-        android:inputType="text"
+        android:inputType="textMultiLine"
+        android:lines="2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/edtTijdUitgebreid"
@@ -72,9 +96,18 @@
         android:textColorLink="@android:color/black"
         android:padding="10dp"
         android:layout_marginTop="5dp"
-        android:layout_below="@id/edtVoorkennisUitgebreid" />
+        android:layout_below="@id/tv_TotaleTijdUitgebreid" />
+    <TextView
+        android:layout_marginTop="8dp"
+        android:text="Inhoudelijk Niveau:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTijdUitgebreid"
+        android:id="@+id/tv_NiveauUitgebreid"
+        android:textColor="@android:color/black" />
     <EditText
-        android:inputType="text"
+        android:inputType="textMultiLine"
+        android:lines="2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/edtNiveauUitgebreid"
@@ -86,12 +119,12 @@
         android:textColorLink="@android:color/black"
         android:padding="10dp"
         android:layout_marginTop="5dp"
-        android:layout_below="@id/edtTijdUitgebreid" />
+        android:layout_below="@id/tv_NiveauUitgebreid" />
     <Button
         android:layout_width="match_parent"
         android:id="@+id/btn_OpslaanUitgebreid"
         android:layout_height="wrap_content"
         android:text="Opslaan"
-        android:background="#FF0000"
+        android:background="#ff6d5f5f"
         android:layout_alignParentBottom="true" />
 </RelativeLayout>

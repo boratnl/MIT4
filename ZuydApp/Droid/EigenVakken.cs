@@ -45,6 +45,11 @@ namespace ZuydApp.Droid
 			SetContentView(Resource.Layout.MijnVakken);
 			_lvVakken = FindViewById<ListView>(Resource.Id.lv_Vakken);
 			_tvFooter = FindViewById<TextView> (Resource.Id.tv_footerVakken);
+			_tvFooter.Text = "5 sterren = Heel goed" +
+				"\n4 sterren = Voldoende" +
+				"\n3 sterren = Matig" +
+				"\n2 sterren = Onvoldoende" +
+				"\n1 ster       = Ruim onvoldoende";
 			//_btnLaad = FindViewById<Button> (Resource.Id.btn_OpslaanMijnVakken);
 			/*_btnLaad.Click += async (object sender, EventArgs e) => {
 				List<VakJSON> listVakken = await VakkenAPI.Fetch ();
@@ -56,7 +61,6 @@ namespace ZuydApp.Droid
 				/*Intent showVak = new Intent(this, typeof(VakFeedback));
 				StartActivity(showVak);*/
 				//Get our item from the list adapter
-
 
 				NewActivity(e.Position);
 
@@ -97,6 +101,24 @@ namespace ZuydApp.Droid
 		{
 			Thread.Sleep(3000);
 			StartActivity(typeof(RatingDialog));
+		}
+
+		public override bool OnCreateOptionsMenu (IMenu menu)
+		{
+			MenuInflater.Inflate (Resource.Menu.menuActionBar, menu);
+			return base.OnCreateOptionsMenu (menu);
+		}
+
+		public override bool OnOptionsItemSelected(IMenuItem item)
+		{
+			base.OnOptionsItemSelected (item);
+			switch(item.ItemId){
+			case Resource.Id.abLogOut:
+				new LogOut().LogoutDatabase();
+				StartActivity (typeof(MainActivity));
+				break;
+			}
+			return true;
 		}
 	}
 }

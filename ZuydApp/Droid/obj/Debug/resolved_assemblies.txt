@@ -3,8 +3,8 @@ C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\packages\sqlite-net-pcl.1.0.11
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\packages\SQLitePCL.raw_basic.0.8.0\build\MonoAndroid\pinvoke_sqlite3\anycpu\SQLitePCL.raw.dll
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\packages\Mono.Data.Sqlite.Portable.1.0.3.5\lib\MonoAndroid\System.Data.Portable.dll
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\packages\Mono.Data.Sqlite.Portable.1.0.3.5\lib\MonoAndroid\System.Transactions.Portable.dll
-C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\packages\Xamarin.Android.Support.v4.22.1.1.1\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll
-C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\packages\Xamarin.Android.Support.v7.AppCompat.22.1.1.1\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll
+C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\packages\Xamarin.Android.Support.v4.22.2.0.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll
+C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\packages\Xamarin.Android.Support.v7.AppCompat.22.2.0.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll
 C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\ZuydApp\bin\Debug\ZuydApp.dll
 C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Collections.Concurrent.dll
 C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Collections.dll

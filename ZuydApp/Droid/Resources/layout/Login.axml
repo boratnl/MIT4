@@ -7,7 +7,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:padding="10dp"
-        android:background="#66BFFF">
+        android:background="#C3D8DF">
         <ImageView
             android:src="@drawable/ZuydTranspararant"
             android:layout_width="wrap_content"
@@ -24,7 +24,8 @@
             android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:background="#66BFFF"
+            android:background="#C3D8DF"
+            android:layout_marginTop="30dp"
             android:layout_alignParentBottom="true"
             android:id="@+id/linearLayout1">
             <EditText
@@ -36,7 +37,8 @@
                 android:layout_marginTop="25dp"
                 android:textColor="@android:color/black"
                 android:textColorHint="@android:color/black"
-                android:textColorLink="@android:color/black" />
+                android:textColorLink="@android:color/black"
+                android:text="els" />
             <EditText
                 android:inputType="textPassword"
                 android:layout_width="match_parent"
@@ -46,7 +48,8 @@
                 android:textColor="@android:color/black"
                 android:textColorHint="@android:color/black"
                 android:textColorHighlight="@android:color/black"
-                android:textColorLink="@android:color/black" />
+                android:textColorLink="@android:color/black"
+                android:text="els" />
             <CheckBox
                 android:text="Onthouden"
                 android:layout_width="match_parent"

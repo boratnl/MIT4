@@ -89,6 +89,31 @@ namespace ZuydApp.Droid
 					}
 				}
 			}
+
+			/*var dbPath = Path.Combine (Environment.GetFolderPath (Environment.SpecialFolder.Personal), db_file);
+			bool exists = File.Exists (dbPath);
+			var conn2 = new SqliteConnection ("Data Source="+dbPath);
+			if (exists) {
+
+				conn2.Open ();
+
+				try {
+					// INSERT INTO Login (Username, Password) VALUES ('test', 'test2')
+					var sql = "UPDATE Login SET Username=@LoginNaam, Password=@LoginPassword WHERE Username='';";
+					//UPDATE Login SET Username='', Password='', Modified='' WHERE Username=@Username;
+					using(var cmd = conn2.CreateCommand()){
+						cmd.CommandText = sql;
+						cmd.Parameters.AddWithValue ("@LoginNaam", "Maikel");
+						cmd.Parameters.AddWithValue ("@LoginPassword", "test");
+						cmd.ExecuteNonQuery ();
+					}
+
+				} catch (Exception ex) {
+					Console.WriteLine (ex.Message);
+				}
+
+				conn2.Close ();
+			}*/
 		}
 
 		public void InsertUser()
@@ -101,7 +126,7 @@ namespace ZuydApp.Droid
 				conn.Open ();
 
 				try {
-
+					// INSERT INTO Login (Username, Password) VALUES ('test', 'test2')
 					var sql = "UPDATE Login SET Username=@LoginNaam, Password=@LoginPassword WHERE Username='';";
 					//UPDATE Login SET Username='', Password='', Modified='' WHERE Username=@Username;
 					using(var cmd = conn.CreateCommand()){

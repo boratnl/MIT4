@@ -3,7 +3,8 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:padding="10dp">
+    android:padding="10dp"
+    android:background="#C3D8DF">
     <ImageView
         android:src="@drawable/zuyd_logo"
         android:layout_width="wrap_content"
@@ -16,6 +17,7 @@
         android:layout_height="53.8dp"
         android:id="@+id/btnVerzendenSchoolfeedback"
         android:background="#ff6d5f5f"
+        android:textColor="@android:color/black"
         android:layout_marginTop="10dp" />
     <EditText
         android:inputType="text"
