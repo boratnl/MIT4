@@ -1,6 +1,10 @@
 ﻿<Properties StartupItem="Droid\ZuydApp.Droid.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.19a0aaaf" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Device" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Droid\UitgebreidActivity.cs">
+    <Files>
+      <File FileName="Droid\UitgebreidActivity.cs" Line="14" Column="24" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="C:\Users\Gebruiker\Desktop\MIT4.git\trunk\ZuydApp\Droid\DatabaseSQLite\LoginRepository.cs" line="140" column="1" />

@@ -31,15 +31,17 @@
         android:layout_marginTop="20dp"
         android:text="Mijn Vakken"
         android:layout_width="match_parent"
-        android:background="#ff6d5f5f"
+        android:background="#fff"
         android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
         android:id="@+id/btnMijnVakken" />
     <Button
         android:layout_marginTop="20dp"
         android:text="Mijn Chatrooms"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ff6d5f5f"
+        android:background="#fff"
+        android:textColor="@android:color/black"
         android:id="@+id/btnMijnChatrooms" />
 <!--<Button
         android:text="Button"
@@ -48,9 +50,10 @@
         android:id="@+id/button3" />-->
     <Button
         android:layout_marginTop="20dp"
-        android:text="Schoolfeedback"
+        android:text="Algemene Feedback"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#ff6d5f5f"
+        android:background="#fff"
+        android:textColor="@android:color/black"
         android:id="@+id/btnSchoolFeedbackMenu" />
 </LinearLayout>

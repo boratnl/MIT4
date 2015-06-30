@@ -13,7 +13,7 @@ using Android.Widget;
 
 namespace ZuydApp.Droid
 {
-	[Activity (Label = "UitgebreidActivity", ScreenOrientation=Android.Content.PM.ScreenOrientation.Portrait)]			
+	[Activity (Label = "Uitgebreide beoordeling", ScreenOrientation=Android.Content.PM.ScreenOrientation.Portrait)]			
 	public class UitgebreidActivity : Activity
 	{
 		EditText et_Docent;
